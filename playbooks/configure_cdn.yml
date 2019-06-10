@@ -1,0 +1,43 @@
+---
+- hosts: cdn
+  gather_facts: yes
+  become: yes
+  become_user: root
+  roles:
+    - users
+    - sudoers
+    - packages
+    - install_audit
+    - install_ntp
+    - install_snmp
+    - install_ssh
+    - install_fail2ban
+    - install_java_8
+    - configure_rsyslog
+    - configure_cdn_shell
+    - configure_cdn_hosts
+    - configure_production_ssl
+    - configure_cdn_bind
+    - configure_cdn_nginx
+    - configure_cdn_pentester
+    - configure_cdn_squid
+    - configure_cdn_getit
+
+- hosts: securus
+  become: yes
+  become_user: root
+  roles:
+    - users
+    - sudoers
+    - packages
+    - install_audit
+    - install_ntp
+    - install_snmp
+    - install_ssh
+    - install_fail2ban
+    - install_java_8
+    - configure_cdn_hosts
+    - configure_production_ssl
+    - configure_cdn_securus_nginx
+    - configure_cdn_securus_getit
+    - configure_cdn_shell

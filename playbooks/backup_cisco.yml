@@ -1,0 +1,31 @@
+---
+- name: Backup Cisco
+  hosts: cisco
+  connection: network_cli
+  become: yes
+  become_method: enable
+  tasks:
+    - name: Show commands being sent for Cisco Devices
+      ios_command:
+        commands:
+          - "show version"
+          - "show run"
+          - "show hw-module all entity"
+      register: show_output
+
+    - name: save collected infromation
+      copy:
+        content: "{{ show_output.stdout[item.index] }}"
+        dest: "{{ item.filename }}"
+      loop_control:
+        label: "{{ item.name }}"
+      loop:
+      - name: show version
+        index: 0
+        filename: "~/repositories/mcornstu-net-infrastructure-configuration/{{ inventory_hostname }}_version.txt"
+      - name: show run
+        index: 1
+        filename: "~/repositories/mcornstu-net-infrastructure-configuration/{{ inventory_hostname }}_{{ ansible_date_time.iso8601 }}_running-config.txt"
+      - name: show hw-module all entity
+        index: 2
+        filename: "~/repositories/mcornstu-net-infrastructure-configuration/{{ inventory_hostname }}_hw-modules.txt"

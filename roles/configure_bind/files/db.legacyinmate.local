@@ -1,0 +1,149 @@
+$TTL	604800
+@			IN	SOA	legacyinmate.local. root.legacyinmate.local. (
+			2018061500		; Serial
+			604800			; Refresh
+			86400			; Retry
+			2419200			; Expire
+			604800 			; Negative Cache TTL
+			)
+
+                                		IN      NS      dns.1.legacyinmate.local.
+                                        	IN      NS      dns.2.legacyinmate.local.
+
+dns.1.legacyinmate.local.			IN      A       192.168.65.10
+dns.2.legacyinmate.local.              		IN      A       192.168.65.11
+
+; ############################################################
+; ############# LEGACYINMATE.LOCAL DNS RECORDS ###############
+; ############################################################
+
+@						IN	A	172.25.0.10
+@ 						IN	A	172.25.0.30
+AccMgmt.legacyinmate.local.      		IN      A       172.25.1.61
+Accounting01.legacyinmate.local.      		IN      A       172.25.1.60
+ACCOUNTING1-PC.legacyinmate.local.      	IN      A       172.25.1.75
+AcctMgmt4.legacyinmate.local.      		IN      A       172.25.1.106
+ACL_798174.legacyinmate.local.      		IN      A       172.25.1.58
+AcronisBackup.legacyinmate.local.      		IN      A       172.25.1.58
+AGARCIA-HP.legacyinmate.local.      		IN      A       172.25.1.38
+AudioMining.legacyinmate.local.      		IN      A       172.25.1.43
+AudioMining-PC.legacyinmate.local.      	IN      A       172.25.1.28
+BRN30055CC78D96.legacyinmate.local.      	IN      A       172.25.1.56
+CCANNON-OS05.legacyinmate.local.      		IN      A       172.25.1.69
+clec03.legacyinmate.local.      		IN      A       172.25.1.88
+CorpPrintServer.legacyinmate.local.      	IN      A       172.25.1.51
+CORPPRINTSRVRVM.legacyinmate.local.      	IN      A       172.25.1.51
+CUSTM01.legacyinmate.local.      		IN      A       172.25.1.70
+CUSTM02.legacyinmate.local.      		IN      A       172.25.1.36
+CUSTM03.legacyinmate.local.      		IN      A       172.25.1.26
+Custm04.legacyinmate.local.      		IN      A       172.25.1.105
+CUSTM05.legacyinmate.local.      		IN      A       172.25.1.10
+CUSTM09.legacyinmate.local.      		IN      A       172.25.1.27
+CUSTM10.legacyinmate.local.      		IN      A       172.25.1.67
+CUSTM5.legacyinmate.local.      		IN      A       172.25.1.33
+Custsrv01.legacyinmate.local.      		IN      A       172.25.1.99
+ENABAVIAN-HP.legacyinmate.local.      		IN      A       172.25.1.50
+HyperV-Corp1.legacyinmate.local.      		IN      A       172.25.1.1
+iconweb.legacyinmate.local.      		IN      A       172.25.1.22
+LLD-CBrown.legacyinmate.local.      		IN      A       172.25.1.54
+LLD-CLEC-01.legacyinmate.local.     	 	IN      A       172.25.1.21
+LLD-CLEC-02.legacyinmate.local.      		IN      A       172.25.1.67
+lld-clec1221.legacyinmate.local.      		IN      A       172.25.1.77
+LLD-CLEC3.legacyinmate.local.      		IN      A       172.25.1.11
+lld-corp-01.legacyinmate.local.      		IN      A       172.25.0.10
+LLD-Corp-02.legacyinmate.local.      		IN      A       172.25.0.30
+LLD-CR.legacyinmate.local.      		IN      A       172.25.1.65
+LLD-GHansell.legacyinmate.local.      		IN      A       172.25.1.85
+LLD-LTRAN.legacyinmate.local.      		IN      A       172.25.1.85
+LLD-PTruong.legacyinmate.local.      		IN      A       172.25.1.59
+LLD-SGUERRA.legacyinmate.local.      		IN      A       172.25.1.35
+LLD-TISA.legacyinmate.local.      		IN      A       172.25.1.16
+Mgmt03.legacyinmate.local.      		IN      A       172.25.1.47
+MGMT04.legacyinmate.local.      		IN      A       172.25.1.55
+MGMT05.legacyinmate.local.      		IN      A       172.25.1.50
+MGMT2.legacyinmate.local.      			IN      A       172.25.1.27
+OPCENTER2.legacyinmate.local.      		IN      A       172.25.1.13
+OPSSUP.legacyinmate.local.      		IN      A       172.25.1.27
+ProMgmt.legacyinmate.local.     	 	IN      A       10.200.79.39
+ProMgmt.legacyinmate.local.      		IN      A       172.25.1.38
+PROWR1.legacyinmate.local.      		IN      A       172.25.1.27
+ProWR2.legacyinmate.local.      		IN      A       172.25.1.32
+ProWR3.legacyinmate.local.      		IN      A       172.25.1.73
+PROWR4.legacyinmate.local.      		IN      A       172.25.1.21
+RadiusCorp.legacyinmate.local.      		IN      A       172.25.1.52
+RadiusSrvrCorp.legacyinmate.local.      	IN      A       172.25.1.52
+RQUINONES-HP.legacyinmate.local.      		IN      A       172.25.1.15
+RRONCES01.legacyinmate.local.      		IN      A       172.25.1.62
+SalesLP1.legacyinmate.local.      		IN      A       172.25.1.26
+SALESLP2.legacyinmate.local.      		IN      A       172.25.1.75
+SALESLP3.legacyinmate.local.      		IN      A       172.25.1.33
+SALESLP3.legacyinmate.local.      		IN      A       10.200.79.20
+SFTP.legacyinmate.local.      			IN      A       172.25.0.125
+SFTPAgent.legacyinmate.local.      		IN      A       172.25.1.63
+sqllegacy.legacyinmate.local.      		IN      A       172.25.0.126
+
+; legacyinmate.local- A Records
+@						IN	A	172.77.10.15	; Legacy 
+2NDDCWIN2008R2.legacyinmate.local.		IN      A 	172.20.30.200	
+ACRONIS-BACKUP.legacyinmate.local.		IN      A 	172.20.30.251	
+ARCHVRECSFTP.legacyinmate.local.		IN      A  	172.20.30.254	
+BioMetricWin10.legacyinmate.local.		IN      A 	172.20.30.230	
+ChatServer2.legacyinmate.local.			IN      A 	172.77.10.9	
+CLUSDB.legacyinmate.local.			IN      A 	172.77.10.8	
+ClustDB.legacyinmate.local.			IN      A 	172.77.10.8
+Cluster1.legacyinmate.local.			IN      A 	172.77.10.16	
+Cluster2.legacyinmate.local.			IN      A 	172.77.10.17	
+DELLSTORAGE.legacyinmate.local.			IN      A 	192.168.1.202
+HyperV.legacyinmate.local.			IN      A 	172.20.30.253	
+HYPERV-2.legacyinmate.local.			IN      A 	172.20.30.252
+HYPERV-3.legacyinmate.local.			IN      A	172.20.30.250
+HYPERV-4.legacyinmate.local.			IN      A	192.168.3.249	
+HYPERV-4.legacyinmate.local.			IN      A 	172.20.30.249	
+HYPERV-5.legacyinmate.local.			IN      A	172.20.30.248	
+Hyperv5.legacyinmate.local.			IN      A 	192.168.1.112	
+ICONSQLSVR01.legacyinmate.local.		IN      A	172.77.10.22	
+LDD-LTRAN2.legacyinmate.local.			IN      A 	192.168.1.131	
+lic-chat.legacyinmate.local.			IN      A 	172.77.10.12	
+lic-chat-1.legacyinmate.local.			IN      A 	172.77.10.11	
+lic-data.legacyinmate.local.			IN      A 	172.77.10.15	
+LIC-ICON-WS-ACP.legacyinmate.local.		IN      A 	172.20.30.28	
+LIC-ICONDB.legacyinmate.local.			IN      A 	172.77.10.10	
+LIC-Med-Str-2.legacyinmate.local.		IN      A 	172.77.10.200
+LIC-Media-Proc.legacyinmate.local.		IN      A 	172.77.10.14	
+LIC-Media-Streaming.legacyinmate.local.		IN      A 	172.77.10.13	
+LIC-OPCENTERDB.legacyinmate.local.		IN      A 	172.20.30.24
+LIC-Storage.legacyinmate.local.			IN      A 	172.77.10.20	
+LIC-Storage2.legacyinmate.local.		IN      A 	172.77.10.21
+LIC-TelcoToolPack.legacyinmate.local.		IN      A	172.77.20.10	
+MSDTC.legacyinmate.local.			IN      A 	172.77.10.7	
+nas184276.legacyinmate.local.			IN      A 	192.168.1.204	
+NVO.legacyinmate.local.				IN      A 	192.168.1.100
+RADIUSSERVER.legacyinmate.local.		IN      A 	172.20.30.9
+SQLClusterDB.legacyinmate.local.		IN      A 	172.77.10.19
+WDS-SERVER.legacyinmate.local.			IN      A 	192.168.1.103
+WIN2008R2V-LAB.legacyinmate.local.		IN      A 	192.168.1.104
+WIN2008VCENTER.legacyinmate.local.		IN      A 	192.168.1.123
+
+
+; ################################################
+; ############# LEGACYINMATE.LOCAL ###############
+; ############# VEGAS DATACENTER #################
+; ################################################
+
+LIC-iCON-Web3VM.legacyinmate.local.     	IN      A       172.77.40.200
+WINCopy-Vegas.legacyinmate.local.       	IN      A       172.30.40.5
+HYPERV-VEGAS.legacyinmate.local.        	IN      A       172.30.40.6
+LIC-WEB2-VEGAS.legacyinmate.local.      	IN      A       172.30.40.7
+LIC-WEB1-Vegas.legacyinmate.local.      	IN      A       172.30.40.9
+ICONWEB1BK.legacyinmate.local.          	IN      A       172.77.40.10
+LIC-OpCtr-Web.legacyinmate.local.       	IN      A       172.77.40.11
+LIC-WEB.legacyinmate.local.             	IN      A       172.77.40.12
+LIC-iCON-Web3.legacyinmate.local.       	IN      A       172.77.40.13
+LIC-iCON-Web4.legacyinmate.local.       	IN      A       172.77.40.14
+LEGACYINMATE1.legacyinmate.local.       	IN      A       172.77.40.15
+ICON-WEB1.legacyinmate.local.           	IN      A       172.77.40.16
+EdgeServer.legacyinmate.local.          	IN      A       172.77.40.17
+WinStorage-Vegas.legacyinmate.local.    	IN      A       172.30.40.18
+CentryLinkWeb.legacyinmate.local.       	IN      A       172.77.40.80
+LIC-iCON-Web3VM.legacyinmate.local.             IN      A       172.77.40.200
+BitWiseSFTP.legacyinmate.local.         	IN      A       172.77.40.201

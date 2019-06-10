@@ -1,0 +1,488 @@
+;
+$TTL	604800
+@			IN	SOA	edovo.com.	systems.edovo.com. (
+			2018080100		; Serial
+			604800			; Refresh
+			86400			; Retry
+			2419200			; Expire
+			604800			; Negative Cache TTL
+			)
+
+; name servers - NS records
+                                        IN      NS      dns.1.edovo.com.
+                                        IN      NS      dns.2.edovo.com.
+
+; ############################################################
+; ############# EDOVO.COM DNS RECORDS ########################
+; ############################################################
+
+
+; Edovo.com   - PTR Records
+10.20	  IN	PTR	admin.edovo.com.			;	192.168.20.10
+10.20	  IN	PTR	api.edovo.com.				;	192.168.20.10
+50.50	  IN	PTR	bastion.edovo.com.			;	192.168.50.50
+10.20	  IN	PTR	ci.edovo.com.				;	192.168.20.10
+10.20	  IN	PTR	community.edovo.com.			;	192.168.20.10
+11.20	  IN	PTR	community.edovo.com.			;	192.168.20.11
+10.20	  IN	PTR	connect.edovo.com.			;	192.168.20.10
+11.20	  IN	PTR	connect.edovo.com.			;	192.168.20.11
+30.65	  IN	PTR	config.edovo.com.			;	192.168.65.30
+10.20	  IN	PTR	content.edovo.com.			;	192.168.20.10
+11.20	  IN	PTR	content.edovo.com.			;	192.168.20.11
+60.20	  IN	PTR	tcontent.edovo.com.			;	192.168.20.60
+15.20	  IN	PTR	corrections.edovo.com.			;	192.168.20.15
+15.20	  IN	PTR	corrections2.edovo.com.			;	192.168.20.15
+10.20	  IN	PTR	courses.edovo.com.			;	192.168.20.10
+11.20	  IN	PTR	courses.edovo.com.			;	192.168.20.11
+70.65	  IN	PTR	deb.edovo.com.				;	192.168.65.70
+100.60	  IN	PTR	fortimanager.edovo.com.			;	192.168.60.100
+1.98	  IN	PTR	fw.edovo.com.				;	192.168.98.1
+10.20	  IN	PTR	go.edovo.com.				;	192.168.20.10
+210.65	  IN	PTR	ipam.edovo.com.				;	192.168.65.210
+10.20	  IN	PTR	insight.edovo.com.			;	192.168.20.10
+200.65	  IN	PTR	intermapper.edovo.com.			;	192.168.65.200
+90.65	  IN	PTR	jenki.edovo.com.			;	192.168.65.90
+80.40	  IN	PTR	jenkins.edovo.com.			;	192.168.40.80
+10.20	  IN	PTR	jes.edovo.com.				;	192.168.20.10
+40.65	  IN	PTR	librenms.edovo.com.			;	192.168.65.40
+10.20	  IN	PTR	messenger.edovo.com.			;	192.168.20.10
+5.128	  IN	PTR	mx.edovo.com.				;	192.168.128.5
+120.60	  IN	PTR	proxy.edovo.com.			;	192.168.60.120
+75.50	  IN	PTR	vpn.securus.edovo.com.			;	192.168.50.75
+50.60	  IN	PTR	syslog.edovo.com.			;	192.168.60.50
+50.15	  IN	PTR	unifi.edovo.com.			;	192.168.15.50
+10.15	  IN	PTR	vsz1.edovo.com.				;	192.168.15.10
+20.15	  IN	PTR	vsz2.edovo.com.				;	192.168.15.20
+45.60	  IN	PTR	backup.edovo.com.			;	192.168.60.45
+230.20	  IN	PTR	consoleaw.edovo.com.			;	192.168.20.230
+235.20	  IN	PTR	dsaw.edovo.com.				;	192.168.20.235
+240.20	  IN	PTR	dbaw.edovo.com.				;	192.168.20.240
+
+
+; ############################################################
+; ############# CH1 DATACENTER A RECORDS #####################
+; ############################################################
+
+; Core Firewalls   - PTR Records
+1.98	  IN	PTR	outside.fw.edovo.com.			;	192.168.98.1
+2.98	  IN	PTR	inside.fw.edovo.com.			;	192.168.98.2
+
+; CH1 Datacenter   - PTR Records
+2.255	  IN	PTR	ar.1.ch1.edovo.com.			;	192.168.255.2
+1.255	  IN	PTR	tun.1.ch1.edovo.com.			;	192.168.255.1
+3.255	  IN	PTR	tun.2.ch1.edovo.com.			;	192.168.255.3
+1.98	  IN	PTR	outside.fw.ch1.edovo.com.		;	192.168.98.1
+2.98	  IN	PTR	inside.fw.ch1.edovo.com.		;	192.168.98.2
+6.97	  IN	PTR	lan.fw.2.ch1.edovo.com.			;	192.168.97.6
+2.98	  IN	PTR	wan.fw.2.ch1.edovo.com.			;	192.168.98.2
+1.98	  IN	PTR	lan.fw.1.ch1.edovo.com.			;	192.168.98.1
+
+; CH1 Datacenter MGMT Interfaces   - PTR Records
+4.100	  IN	PTR	sw.1.mgmt.ch1.edovo.com.		;	192.168.100.4
+5.100	  IN	PTR	sw.2.mgmt.ch1.edovo.com.		;	192.168.100.5
+41.100	  IN	PTR	pdu.1.mgmt.ch1.edovo.com.		;	192.168.100.41
+42.100	  IN	PTR	pdu.2.mgmt.ch1.edovo.com.		;	192.168.100.42
+43.100	  IN	PTR	pdu.3.mgmt.ch1.edovo.com.		;	192.168.100.43
+44.100	  IN	PTR	pdu.4.mgmt.ch1.edovo.com.		;	192.168.100.44
+31.100	  IN	PTR	galera.1.mgmt.ch1.edovo.com.		;	192.168.100.31
+32.100	  IN	PTR	galera.2.mgmt.ch1.edovo.com.		;	192.168.100.32
+33.100	  IN	PTR	galera.3.mgmt.ch1.edovo.com.		;	192.168.100.33
+34.100	  IN	PTR	bastion.mgmt.ch1.edovo.com.		;	192.168.100.34
+
+
+
+; ############################################################
+; ############# SERVER CENTRAL EGV A RECORDS #################
+; ############################################################
+
+; Server Central EGV WLAN Network   - PTR Records
+10.15	  IN	PTR	vsz.1.wlan.edovo.com.			;	192.168.15.10
+20.15	  IN	PTR	vsz.2.wlan.edovo.com.			;	192.168.15.20
+50.15	  IN	PTR	unifi.1.wlan.edovo.com.			;	192.168.15.50
+70.15	  IN	PTR	carat.wlan.edovo.com.			;	192.168.15.70
+75.15	  IN	PTR	sonar.wlan.edovo.com.			;	192.168.15.75
+
+; Server Central EGV Production Network   - PTR Records
+230.20	  IN	PTR	app.1.mdm.prod.egv.edovo.com.		;	192.168.20.230
+235.20	  IN	PTR	app.2.mdm.prod.egv.edovo.com.		;	192.168.20.235
+240.20	  IN	PTR	db.1.mdm.prod.egv.edovo.com.		;	192.168.20.240
+160.20	  IN	PTR	galera.1.prod.egv.edovo.com.		;	192.168.20.160
+155.20	  IN	PTR	galera.2.prod.egv.edovo.com.		;	192.168.20.155
+150.20	  IN	PTR	galera.3.prod.egv.edovo.com.		;	192.168.20.150
+10.20	  IN	PTR	lb.1.prod.egv.edovo.com.		;	192.168.20.10
+15.20	  IN	PTR	lb.2.prod.egv.edovo.com.		;	192.168.20.15
+11.20	  IN	PTR	lb.3.prod.egv.edovo.com.		;	192.168.20.11
+14.20	  IN	PTR	lb.4.prod.egv.edovo.com.		;	192.168.20.14
+50.20	  IN	PTR	store.1.prod.egv.edovo.com.		;	192.168.20.50
+30.20	  IN	PTR	webapp.1.prod.egv.edovo.com.		;	192.168.20.30
+35.20	  IN	PTR	webapp.2.prod.egv.edovo.com.		;	192.168.20.35
+20.20	  IN	PTR	webapp.3.prod.egv.edovo.com.		;	192.168.20.20
+
+; Server Central EGV Development Network   - PTR Records
+80.40	  IN	PTR	jenkins.1.dev.egv.edovo.com.		;	192.168.40.80
+100.40	  IN	PTR	tedovo.1.dev.egv.edovo.com.		;	192.168.40.100
+
+; Server Central DMZ Network   - PTR Records
+50.50	  IN	PTR	bastion.1.dmz.egv.edovo.com.		;	192.168.50.50
+10.60	  IN	PTR	dns.1.ops.egv.edovo.com.		;	192.168.60.10
+
+; Server Central Staging Network   - PTR Records
+10.80	  IN	PTR	lb.1.staging.egv.edovo.com.		;	192.168.80.10
+15.80	  IN	PTR	lb.2.staging.egv.edovo.com.		;	192.168.80.15
+11.80	  IN	PTR	lb.3.staging.egv.edovo.com.		;	192.168.80.11
+14.80	  IN	PTR	lb.4.staging.egv.edovo.com.		;	192.168.80.14
+50.80	  IN	PTR	store.1.staging.egv.edovo.com.		;	192.168.80.50
+30.80	  IN	PTR	webapp.1.staging.egv.edovo.com.		;	192.168.80.30
+35.80	  IN	PTR	webapp.2.staging.egv.edovo.com.		;	192.168.80.35
+20.80	  IN	PTR	webapp.3.staging.egv.edovo.com.		;	192.168.80.20
+
+
+
+; ############################################################
+; ############# AWS US EAST OHIO A RECORDS ###################
+; ############################################################
+
+; Peering Points   - PTR Records
+2.99	  IN  	PTR	peer.prod.aws.edovo.com.		;	192.168.99.2
+6.99	  IN  	PTR	peer.ops.aws.edovo.com.	  		;	192.168.99.6
+10.99	  IN	PTR	peer.dev.aws.edovo.com.	  		;	192.168.99.10
+
+; Prod Network   - PTR Records
+20.25	  IN	PTR	webapp.1.prod.edovo.com.		;	192.168.25.20
+25.25	  IN	PTR	webapp.2.prod.edovo.com.		;	192.168.25.25
+30.25	  IN	PTR	webapp.3.prod.edovo.com.		;	192.168.25.30
+125.24  IN  PTR headsup.edovo.com           ; 192.168.24.125
+
+; Ops Network   - PTR Records
+70.65	  IN	PTR	deb.ops.edovo.com.	    		;	192.168.65.70
+45.65	  IN	PTR	backup.ops.edovo.com.	    		;	192.168.65.45
+30.65	  IN	PTR	config.ops.edovo.com.	    		;	192.168.65.30
+10.65	  IN	PTR	dns.1.ops.edovo.com.	    		;	192.168.65.10
+11.65	  IN	PTR	dns.2.ops.edovo.com.	    		;	192.168.65.11
+15.65	  IN	PTR	dhcp.1.ops.edovo.com.	    		;	192.168.65.15
+16.65	  IN	PTR	dhcp.2.ops.edovo.com.	    		;	192.168.65.16
+200.65	  IN	PTR	intermapper.ops.edovo.com.		;	192.168.65.200
+210.65	  IN	PTR	ipam.ops.edovo.com.			;	192.168.65.210
+90.65	  IN	PTR	jenkins.ops.edovo.com.			;	192.168.65.90
+40.65	  IN	PTR	librenms.ops.edovo.com.			;	192.168.65.40
+120.65	  IN	PTR	proxy.ops.edovo.com.			;	192.168.65.120
+80.65	  IN	PTR	radius.1.ops.edovo.com.			;	192.168.65.80
+85.65	  IN	PTR	radius.2.ops.edovo.com.			;	192.168.65.85
+150.65	  IN	PTR	sg.1.ops.edovo.com.			;	192.168.65.150
+155.65	  IN	PTR	sg.2.ops.edovo.com.			;	192.168.65.155
+50.65	  IN	PTR	syslog.ops.edovo.com.			;	192.168.65.50
+
+
+
+; ############################################################
+; ############ LA DATACENTER  PTR RECORDS ####################
+; ############################################################
+
+7.254	IN	PTR	rtr.la1.edovo.com.			;	192.168.254.7
+202.1	IN	PTR	dellstorage.legacyinmate.edovo.com.	;	192.168.1.202
+112.1	IN	PTR	hyperv5.legacyinmate.edovo.com.		;	192.168.1.112
+131.1	IN	PTR	ldd-ltran2.legacyinmate.edovo.com.	;	192.168.1.131
+204.1	IN	PTR	nas184276.legacyinmate.edovo.com.	;	192.168.1.204
+100.1	IN	PTR	nvo.legacyinmate.edovo.com.		;	192.168.1.100
+103.1	IN	PTR	wds-server.legacyinmate.edovo.com.	;	192.168.1.103
+104.1	IN	PTR	win2008r2v-lab.legacyinmate.edovo.com.	;	192.168.1.104
+123.1	IN	PTR	win2008vcenter.legacyinmate.edovo.com.	;	192.168.1.123
+
+
+
+; ############################################################
+; ############# EDOVO OFFICE DNS RECORDS #####################
+; ############################################################
+
+; Edovo Chicago Office Network   - PTR Records
+21.13	IN	PTR	114.office.il.edovo.com.		;	192.168.13.21
+22.13	IN	PTR	102.office.il.edovo.com.		;	192.168.13.22
+23.13	IN	PTR	121.office.il.edovo.com.		;	192.168.13.23
+24.13	IN	PTR	113.office.il.edovo.com.		;	192.168.13.24
+25.13	IN	PTR	556.office.il.edovo.com.		;	192.168.13.25
+26.13	IN	PTR	557.office.il.edovo.com.		;	192.168.13.26
+27.13	IN	PTR	560.office.il.edovo.com.		;	192.168.13.27
+28.13	IN	PTR	558.office.il.edovo.com.		;	192.168.13.28
+11.10	IN	PTR	ap.1.office.il.edovo.com.		;	192.168.10.11
+12.10	IN	PTR	ap.2.office.il.edovo.com.		;	192.168.10.12
+13.10	IN	PTR	ap.3.office.il.edovo.com.		;	192.168.10.13
+14.10	IN	PTR	ap.4.office.il.edovo.com.		;	192.168.10.14
+15.14	IN	PTR	camsw.1.office.il.edovo.com.		;	192.168.14.15
+21.14	IN	PTR	cam.1.office.il.edovo.com.		;	192.168.14.21
+22.14	IN	PTR	cam.2.office.il.edovo.com.		;	192.168.14.22
+23.14	IN	PTR	cam.3.office.il.edovo.com.		;	192.168.14.23
+24.14	IN	PTR	cam.4.office.il.edovo.com.		;	192.168.14.24
+25.14	IN	PTR	cam.5.office.il.edovo.com.		;	192.168.14.25
+15.12	IN	PTR	mac.dev.office.il.edovo.com.		;	192.168.12.15
+14.12	IN	PTR	mac.noc.office.il.edovo.com.		;	192.168.12.14
+20.14	IN	PTR	nvr.office.il.edovo.com.		;	192.168.14.20
+5.254	IN	PTR	rtr.office.il.edovo.com.		;	192.168.254.5
+5.10	IN	PTR	sw.1.office.il.edovo.com.		;	192.168.10.5
+6.10	IN	PTR	sw.2.office.il.edovo.com.		;	192.168.10.6
+99.10	IN	PTR	sw.demo.office.il.edovo.com.		;	192.168.10.99
+
+; Edovo Cypress Office Network   - PTR Records
+7.254	  IN	PTR	rtr.office.ca.edovo.com.		;	192.168.254.7
+
+
+; ############################################################
+; ############# EDOVO VPN SITE DNS RECORDS ###################
+; ############################################################
+
+; Edovo Test Site   - PTR Records
+11.254	IN	PTR	rtr.groomlake.edovo.com.		;	192.168.254.11
+
+; Napa County Jail, CA   - PTR Records
+12.254	IN	PTR	rtr.ncj.ca.edovo.com.			;	192.168.254.12
+
+; Trinity County Jail, CA   - PTR Records
+13.254	IN	PTR	rtr.tcj.ca.edovo.com.			;	192.168.254.13
+
+; IYC Chicago Juvenile, IL  - PTR Records
+14.254	IN	PTR	rtr.iycc.il.edovo.com.			;	192.168.254.14
+
+; Allegheny County Jail, PA  - PTR Records
+15.254	IN	PTR	rtr.acj.pa.edovo.com.			;	192.168.254.15
+
+; IYC Warrenville Juvenile, IL  - PTR Records
+16.254	IN	PTR	rtr.iycw.il.edovo.com.			;	192.168.254.16
+
+; Tutwiler Prison, AL  - PTR Records
+17.254	IN	PTR	rtr.tpw.al.edovo.com.			;	192.168.254.17
+
+; Madera County Jail, CA  - PTR Records
+18.254	IN	PTR	rtr.mcdc.ca.edovo.com.			;	192.168.254.18
+
+; High Point Detention, NC  - PTR Records
+19.254	IN	PTR	rtr.hpd.nc.edovo.com.			;	192.168.254.19
+
+; Bartow County Jail, GA  - PTR Records
+20.254	IN	PTR	rtr.bcj.ga.edovo.com.			;	192.168.254.20
+
+; Ozaukee County Jail, WI  - PTR Records
+21.254	IN	PTR	rtr.ocj.wi.edovo.com.			;	192.168.254.21
+
+; Madera Juvenile, CA  - PTR Records
+32.254	IN	PTR	rtr.mcjd.ca.edovo.com.			;	192.168.254.32
+
+; Rockingham Jail, VA  - PTR Records
+22.254	IN	PTR	rtr.rhm.va.edovo.com.			;	192.168.254.22
+
+; Forsyth County Jail, NC  - PTR Records
+23.254	IN	PTR	rtr.fcj.nc.edovo.com.			;	192.168.254.23
+
+; Kane County Jail, IL  - PTR Records
+24.254	IN	PTR	rtr.kcj.il.edovo.com.			;	192.168.254.24
+
+; Butts County Jail, GA  - PTR Records
+25.254	IN	PTR	rtr.bucj.ga.edovo.com.			;	192.168.254.25
+
+; Rutherford County Jail, TN  - PTR Records
+26.254	IN	PTR	rtr.rcj.tn.edovo.com.			;	192.168.254.26
+
+; Lassen County Jail, CA  - PTR Records
+27.254	IN	PTR	rtr.lcj.ca.edovo.com.			;	192.168.254.27
+
+; Dorchester County Jail, SC  - PTR Records
+28.254	IN	PTR	rtr.dcj.sc.edovo.com.			;	192.168.254.28
+
+; Granville County Jail, NC  - PTR Records
+29.254	IN	PTR	rtr.grcj.nc.edovo.com.			;	192.168.254.29
+
+; Ulster County Jail, NY  - PTR Records
+30.254	IN	PTR	rtr.ucj.ny.edovo.com.			;	192.168.254.30
+
+; San Luis Obisbo, CA  - PTR Records
+31.254	IN	PTR	rtr.slo.ca.edovo.com.			;	192.168.254.31
+
+; Davis County Jail, UT  - PTR Records
+33.254	IN	PTR	rtr.dcj.ut.edovo.com.			;	192.168.254.33
+
+; Steuben County Jail, IN  - PTR Records
+34.254	IN	PTR	rtr.sbcj.in.edovo.com.			;	192.168.254.34
+
+; Christian County Jail, MO  - PTR Records
+35.254	IN	PTR	rtr.ccj.mo.edovo.com.			;	192.168.254.35
+
+; Sacamento County Main Jail, CA  - PTR Records
+36.254	IN	PTR	rtr.scmj.ca.edovo.com.			;	192.168.254.36
+
+; Woodford County, IL  - PTR Records
+37.254	IN	PTR	rtr.wcj.il.edovo.com.			;	192.168.254.37
+
+; Middlesex County, MA  - PTR Records
+38.254	IN	PTR	rtr.mcj.ma.edovo.com.			;	192.168.254.38
+
+; Hall County, GA  - PTR Records
+39.254	IN	PTR	rtr.hcj.ga.edovo.com.			;	192.168.254.39
+
+; Mono County Jail, CA  - PTR Records
+41.254	IN	PTR	rtr.mcj.ca.edovo.com.			;	192.168.254.41
+
+; Mitchell County Jail, GA  - PTR Records
+42.254	IN	PTR	rtr.mcj.ga.edovo.com.			;	192.168.254.42
+
+; Guilford County, NC  - PTR Records
+43.254	IN	PTR	rtr.gcj.nc.edovo.com.			;	192.168.254.43
+
+; South Lake Tahoe Jail, CA  - PTR Records
+44.254	IN	PTR	rtr.sltj.ca.edovo.com.			;	192.168.254.44
+
+; Ramsey County Jail, MN  - PTR Records
+45.254	IN	PTR	rtr.rcj.mn.edovo.com.			;	192.168.254.45
+
+; Etowah County Jail, AL  - PTR Records
+46.254	IN	PTR	rtr.ecj.al.edovo.com.			;	192.168.254.46
+
+; Baraga Correctional Facility, MI  - PTR Records
+47.254	IN	PTR	rtr.bcf.mi.edovo.com.			;	192.168.254.47
+
+; Wyandotte County Jail, KS  - PTR Records
+48.254	IN	PTR	rtr.wcj.ks.edovo.com.			;	192.168.254.48
+
+; Paytel Test Lab, NC  - PTR Records
+49.254	IN	PTR	rtr.paytel.nc.edovo.com.		;	192.168.254.49
+
+; Louisville Metro Department of Corrections, KY  - PTR Records
+50.254	IN	PTR	rtr.lmdoc.ky.edovo.com.			;	192.168.254.50
+
+; Riverside Regional Network, VA  - PTR Records
+51.254	IN	PTR	rtr.rrj.va.edovo.com.			;	192.168.254.51
+
+; RSW Regional Jail, VA  - PTR Records
+52.254	IN	PTR	rtr.rsw.va.edovo.com.			;	192.168.254.52
+
+; Rockbridge Regional Jail, VA  - PTR Records
+53.254	IN	PTR	rtr.rbj.va.edovo.com.			;	192.168.254.53
+
+; El Dorado County, Placerville, CA  - PTR Records
+54.254	IN	PTR	rtr.edp.ca.edovo.com.			;	192.168.254.54
+
+; Warren County Jail, PA  - PTR Records
+55.254	IN	PTR	rtr.wcj.pa.edovo.com.			;	192.168.254.55
+
+; Mendocino County Jail, CA  - PTR Records
+56.254	IN	PTR	rtr.mdc.ca.edovo.com.			;	192.168.254.56
+
+; Sullivan County Jail, IN   - PTR Records
+57.254	IN	PTR	rtr.scj.in.edovo.com.			;	192.168.254.57
+
+; McCracken County Jail, KY  - PTR Records
+58.254	IN	PTR	rtr.mcj.ky.edovo.com.			;	192.168.254.58
+
+; Mendocino Juvenile, CA  - PTR Records
+59.254	IN	PTR	rtr.mdcj.ca.edovo.com.			;	192.168.254.59
+
+; Vigo County Jail, IN  - PTR Records
+60.254	IN	PTR	rtr.vcj.in.edovo.com.			;	192.168.254.60
+
+; Humboldt County Jail, CA  - PTR Records
+61.254	IN	PTR	rtr.hcj.ca.edovo.com.			;	192.168.254.61
+
+; McKinley County Jail, NM  - PTR Records
+62.254	IN	PTR	rtr.mcj.nm.edovo.com.			;	192.168.254.62
+
+; Martinsville County Jail, VA  - PTR Records
+63.254	IN	PTR	rtr.mcj.va.edovo.com.			;	192.168.254.63
+
+; Montana State Prison, MT  - PTR Records
+64.254	IN	PTR	rtr.msp.mt.edovo.com.			;	192.168.254.64
+
+; Montana Womens Prison, MT  - PTR Records
+65.254	IN	PTR	rtr.mwp.mt.edovo.com.			;	192.168.254.65
+
+; Montana Pine Hills Correctional Facility  - PTR Records
+66.254	IN	PTR	rtr.phycf.mt.edovo.com.			;	192.168.254.66
+
+; Montana Riverside Corectional Facility  - PTR Records
+67.254	IN	PTR	rtr.rcf.mt.edovo.com.			;	192.168.254.67
+
+; Montana Lewistown Infirmary  - PTR Records
+68.254	IN	PTR	rtr.lti.mt.edovo.com.			;	192.168.254.68
+
+; Randolph County, NC  - PTR Records
+69.254	IN	PTR	rtr.rcj.nc.edovo.com.			;	192.168.254.69
+
+; St. Johns County, FL  - PTR Records
+70.254	IN	PTR	rtr.sjc.fl.edovo.com.			;	192.168.254.70
+
+; Santa Barbara County, CA  - PTR Records
+71.254	IN	PTR	rtr.sbc.ca.edovo.com.			;	192.168.254.71
+
+; Burke County, GA  - PTR Records
+72.254	IN	PTR	rtr.bk.ga.edovo.com.			;	192.168.254.72
+
+; Turnkey Office  - PTR Records
+73.254	IN	PTR	rtr.trnkey.1.edovo.com.			;	192.168.254.73
+
+; Turnkey Site  - PTR Records
+74.254	IN	PTR	rtr.trnkey.2.edovo.com.			;	192.168.254.74
+
+
+; ############################################################
+; ############# EDOVO WAN SITE DNS RECORDS ###################
+; ############################################################
+
+; ############# ATT WAN SITE DNS RECORDS #####################
+
+; Yolo County Jail, CA  - PTR Records
+11.253	IN	PTR	rtr.ycj.ca.edovo.com.			;	192.168.253.11
+
+; William Donaldson Correctional Facility, AL  - PTR Records
+12.253	IN	PTR	rtr.wdcf.al.edovo.com.			;	192.168.253.12
+
+; Sonoma County Jail, CA  - PTR Records
+13.253	IN	PTR	rtr.scj.ca.edovo.com.			;	192.168.253.13
+
+; Thumb Correctional Facility Network, MI  - PTR Records
+14.253	IN	PTR	rtr.tcf.mi.edovo.com.			;	192.168.253.14
+
+; Women's Huron Valley Correctional Network, MI  - PTR Records
+15.253	IN	PTR	rtr.whvc.mi.edovo.com.			;	192.168.253.15
+
+; Bellamy Creek Correctional Network, MI  - PTR Records
+16.253  IN	PTR	rtr.bcc.mi.edovo.com.			;	192.168.253.16
+
+
+
+; ############################################################
+; ######## EDOVO WAN SITE EXTENSIONS DNS RECORDS #############
+; ############################################################
+
+; ######## ATT WAN SITE EXTENSIONS DNS RECORDS ###############
+
+; Madera County Juvenile Services, CA  - PTR Records
+1.252   IN	PTR	rtr.mcjs.ca.edovo.com.			;	192.168.252.1
+
+
+; ##################################################
+; ############# LEGACY DNS CONFIGURATION ###########
+; ##################################################
+
+; OPS Network   - PTR Records
+80.40	IN	PTR	jenkins.devops.edovo.com.		;	192.168.40.80
+
+; Production Network   - PTR Records
+10.20	IN	PTR	lb1.prod.edovo.com.			;	192.168.20.10
+15.20	IN	PTR	lb2.prod.edovo.com.			;	192.168.20.15
+11.20	IN	PTR	lb3.prod.edovo.com.			;	192.168.20.11
+14.20	IN	PTR	lb4.prod.edovo.com.			;	192.168.20.14
+20.20	IN	PTR	webapp3.prod.edovo.com.			;	192.168.20.20
+30.20	IN	PTR	webapp1.prod.edovo.com.			;	192.168.20.30
+35.20	IN	PTR	webapp2.prod.edovo.com.			;	192.168.20.35
+50.20	IN	PTR	store1.prod.edovo.com.			;	192.168.20.50
+160.20	IN	PTR	galera1.prod.edovo.com.			;	192.168.20.160
+155.20	IN	PTR	galera2.prod.edovo.com.			;	192.168.20.155
+150.20	IN	PTR	galera3.prod.edovo.com.			;	192.168.20.150
+
+; Staging Network   - PTR Records
+10.80	IN	PTR	lb1.stage.edovo.com.			;	192.168.80.10
+15.80	IN	PTR	lb2.stage.edovo.com.			;	192.168.80.15
+30.80	IN	PTR	webapp1.stage.edovo.com.		;	192.168.80.30
+35.80	IN	PTR	webapp2.stage.edovo.com.		;	192.168.80.35
+20.80	IN	PTR	webapp3.stage.edovo.com.		;	192.168.80.20
+50.80	IN	PTR	store1.stage.edovo.com.			;	192.168.80.50
+
+; ##################################################
+; ############# END DNS CONFIGURATION ##############
+; ##################################################

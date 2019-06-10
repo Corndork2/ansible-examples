@@ -1,0 +1,59 @@
+//
+// Do any local configuration here
+//
+
+zone "connectivitycheck.gstatic.com" {
+    type master;
+    file "/etc/bind/zones/db.connectivitycheck.gstatic.com"; # zone file path
+};
+
+zone "tplsites.s3.amazonaws.com" {
+    type master;
+    file "/etc/bind/zones/db.tplsites.s3.amazonaws.com"; # zone file path
+};
+
+zone "grstorage.s3.amazonaws.com" {
+    type master;
+    file "/etc/bind/zones/db.grstorage.s3.amazonaws.com"; # zone file path
+};
+
+zone "tplmedia.s3.amazonaws.com" {
+    type master;
+    file "/etc/bind/zones/db.tplmedia.s3.amazonaws.com"; # zone file path
+};
+
+zone "lglessons.s3-website-us-east-1.amazonaws.com" {
+    type master;
+    file "/etc/bind/zones/db.lglessons.s3-website-us-east-1.amazonaws.com"; # zone file path
+};
+
+zone "tedovo.com" {
+    type master;
+    file "/etc/bind/zones/db.tedovo.com"; # zone file path
+};
+
+zone "learnedovo.com" {
+    type master;
+    file "/etc/bind/zones/db.learnedovo.com"; # zone file path
+};
+
+zone "edovo.com" {
+    type master;
+    file "/etc/bind/zones/db.edovo.com"; # zone file path
+};
+
+zone "10.in-addr.arpa" {
+    type master;
+    file "/etc/bind/zones/db.10";  # 10.0.0.0/8 subnet
+};
+
+zone "16.172.in-addr.arpa" {
+    type master;
+    file "/etc/bind/zones/db.172.16";  # 172.16.0.0/12 subnet
+};
+
+zone "168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/zones/db.192.168";  # 192.168.0.0/16 subnet
+};
+

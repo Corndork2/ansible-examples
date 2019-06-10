@@ -1,0 +1,751 @@
+;
+$TTL	604800
+@			IN	SOA	edovo.com.	systems.edovo.com. (
+			2018080100		; Serial
+			604800			; Refresh
+			86400			; Retry
+			2419200			; Expire
+			604800			; Negative Cache TTL
+			)
+
+; name servers - NS records
+                                        IN      NS      dns.1.edovo.com.
+                                        IN      NS      dns.2.edovo.com.
+
+
+; ############################################################
+; ########### CH1 DATACENTER PTR RecordS #####################
+; ############################################################
+
+; CH1 Datacenter - PTR Records
+1.31.16		IN	PTR		vzwrtr.1.ch1.edovo.com.			; 172.16.31.1
+5.31.16		IN	PTR		vzwrtr.2.ch1.edovo.com.			; 172.16.31.5
+
+; ############################################################
+; ########### LA DATACENTER  PTR RecordS #####################
+; ############################################################
+
+4.20.16		IN	PTR		wan.rtr.la1.edovo.com.			; 172.16.20.4
+5.60.31		IN	PTR		gi1.rtr.la1.edovo.com			; 172.31.60.5
+1.60.31		IN	PTR		gi2.rtr.la1.edovo.com.			; 172.31.60.1
+2.60.31		IN	PTR		fw.1.la1.edovo.com.			; 172.31.60.2
+200.30.20	IN	PTR		2nddcwin2008r2.legacyinmate.edovo.com.	; 172.20.30.200
+251.30.20	IN	PTR		acronis-backup.legacyinmate.edovo.com.	; 172.20.30.251
+254.30.20	IN	PTR		archcvrecsftp.legacyinmate.edovo.com.	; 172.20.30.254
+230.30.20	IN	PTR		biometricwin10.legacyinmate.edovo.com.	; 172.20.30.230
+253.30.20	IN	PTR		hyperv.legacyinmate.edovo.com.		; 172.20.30.253
+252.30.20	IN	PTR		hyperv-2.legacyinmate.edovo.com.	; 172.20.30.252
+250.30.20	IN	PTR		hyperv-3.legacyinmate.edovo.com.	; 172.20.30.250
+249.30.20	IN	PTR		hyperv-4.legacyinmate.edovo.com.	; 172.20.30.249
+248.30.20	IN	PTR		hyperv-5.legacyinmate.edovo.com.	; 172.20.30.248
+28.30.20	IN	PTR		lic-icon-ws-acp.legacyinmate.edovo.com.	; 172.20.30.28
+24.30.20	IN	PTR		lic-opcenterdb.legacyinmate.edovo.com.	; 172.20.30.24
+9.30.20		IN	PTR		radiusserver.legacyinmate.edovo.com.	; 172.20.30.9
+
+; ##########################################################
+; ########### VEGAS DATACENTER PTR RecordS #################
+; ##########################################################
+
+5.40.30		IN	PTR		wincopy-vegas.legacyinmate.edovo.com.	; 172.30.40.5
+6.40.30		IN	PTR		hyperv-vegas.legacyinmate.edovo.com.	; 172.30.40.6
+7.40.30		IN	PTR		lic-web2-vegas.legacyinmate.edovo.com.	; 172.30.40.7
+9.40.30		IN	PTR		lic-web1-vegas.legacyinmate.edovo.com.	; 172.30.40.9
+
+; ############################################################
+; ############TUNNEL ENDPOINT  PTR RecordS ###################
+; ############################################################
+
+; Tunnel Router 1 - PTR Records
+
+1.0.16		IN	PTR		tun.100.tun.1.ch1.edovo.com.		; 172.16.0.1
+5.0.16		IN	PTR		tun.101.tun.1.ch1.edovo.com.		; 172.16.0.5
+9.0.16		IN	PTR		tun.102.tun.1.ch1.edovo.com.		; 172.16.0.9
+13.0.16		IN	PTR		tun.103.tun.1.ch1.edovo.com.		; 172.16.0.13
+17.0.16		IN	PTR		tun.104.tun.1.ch1.edovo.com.		; 172.16.0.17
+21.0.16		IN	PTR		tun.105.tun.1.ch1.edovo.com.		; 172.16.0.21
+25.0.16		IN	PTR		tun.106.tun.1.ch1.edovo.com.		; 172.16.0.25
+29.0.16		IN	PTR		tun.107.tun.1.ch1.edovo.com.		; 172.16.0.29
+33.0.16		IN	PTR		tun.108.tun.1.ch1.edovo.com.		; 172.16.0.33
+37.0.16		IN	PTR		tun.109.tun.1.ch1.edovo.com.		; 172.16.0.37
+41.0.16		IN	PTR		tun.110.tun.1.ch1.edovo.com.		; 172.16.0.41
+45.0.16		IN	PTR		tun.111.tun.1.ch1.edovo.com.		; 172.16.0.45
+49.0.16		IN	PTR		tun.112.tun.1.ch1.edovo.com.		; 172.16.0.49
+53.0.16		IN	PTR		tun.113.tun.1.ch1.edovo.com.		; 172.16.0.53
+57.0.16		IN	PTR		tun.114.tun.1.ch1.edovo.com.		; 172.16.0.57
+61.0.16		IN	PTR		tun.115.tun.1.ch1.edovo.com.		; 172.16.0.61
+65.0.16		IN	PTR		tun.116.tun.1.ch1.edovo.com.		; 172.16.0.65
+69.0.16		IN	PTR		tun.117.tun.1.ch1.edovo.com.		; 172.16.0.69
+73.0.16		IN	PTR		tun.118.tun.1.ch1.edovo.com.		; 172.16.0.73
+77.0.16		IN	PTR		tun.119.tun.1.ch1.edovo.com.		; 172.16.0.77
+81.0.16		IN	PTR		tun.120.tun.1.ch1.edovo.com.		; 172.16.0.81
+85.0.16		IN	PTR		tun.121.tun.1.ch1.edovo.com.		; 172.16.0.85
+89.0.16		IN	PTR		tun.122.tun.1.ch1.edovo.com.		; 172.16.0.89
+93.0.16		IN	PTR		tun.123.tun.1.ch1.edovo.com.		; 172.16.0.93
+97.0.16		IN	PTR		tun.124.tun.1.ch1.edovo.com.		; 172.16.0.97
+101.0.16	IN	PTR		tun.125.tun.1.ch1.edovo.com.		; 172.16.0.101
+105.0.16	IN	PTR		tun.126.tun.1.ch1.edovo.com.		; 172.16.0.105
+109.0.16	IN	PTR		tun.127.tun.1.ch1.edovo.com.		; 172.16.0.109
+113.0.16	IN	PTR		tun.128.tun.1.ch1.edovo.com.		; 172.16.0.113
+117.0.16	IN	PTR		tun.129.tun.1.ch1.edovo.com.		; 172.16.0.117
+121.0.16	IN	PTR		tun.130.tun.1.ch1.edovo.com.		; 172.16.0.121
+125.0.16	IN	PTR		tun.131.tun.1.ch1.edovo.com.		; 172.16.0.125
+129.0.16	IN	PTR		tun.132.tun.1.ch1.edovo.com.		; 172.16.0.129
+133.0.16	IN	PTR		tun.133.tun.1.ch1.edovo.com.		; 172.16.0.133
+137.0.16	IN	PTR		tun.134.tun.1.ch1.edovo.com.		; 172.16.0.137
+141.0.16	IN	PTR		tun.135.tun.1.ch1.edovo.com.		; 172.16.0.141
+145.0.16	IN	PTR		tun.136.tun.1.ch1.edovo.com.		; 172.16.0.145
+149.0.16	IN	PTR		tun.137.tun.1.ch1.edovo.com.		; 172.16.0.149
+153.0.16	IN	PTR		tun.138.tun.1.ch1.edovo.com.		; 172.16.0.153
+157.0.16	IN	PTR		tun.139.tun.1.ch1.edovo.com.		; 172.16.0.157
+161.0.16	IN	PTR		tun.140.tun.1.ch1.edovo.com.		; 172.16.0.161
+165.0.16	IN	PTR		tun.141.tun.1.ch1.edovo.com.		; 172.16.0.165
+169.0.16	IN	PTR		tun.142.tun.1.ch1.edovo.com.		; 172.16.0.169
+173.0.16	IN	PTR		tun.143.tun.1.ch1.edovo.com.		; 172.16.0.173
+177.0.16	IN	PTR		tun.144.tun.1.ch1.edovo.com.		; 172.16.0.177
+181.0.16	IN	PTR		tun.145.tun.1.ch1.edovo.com.		; 172.16.0.181
+185.0.16	IN	PTR		tun.146.tun.1.ch1.edovo.com.		; 172.16.0.185
+189.0.16	IN	PTR		tun.147.tun.1.ch1.edovo.com.		; 172.16.0.189
+193.0.16	IN	PTR		tun.148.tun.1.ch1.edovo.com.		; 172.16.0.193
+197.0.16	IN	PTR		tun.149.tun.1.ch1.edovo.com.		; 172.16.0.197
+201.0.16	IN	PTR		tun.150.tun.1.ch1.edovo.com.		; 172.16.0.201
+205.0.16	IN	PTR		tun.151.tun.1.ch1.edovo.com.		; 172.16.0.205
+209.0.16	IN	PTR		tun.152.tun.1.ch1.edovo.com.		; 172.16.0.209
+213.0.16	IN	PTR		tun.153.tun.1.ch1.edovo.com.		; 172.16.0.213
+217.0.16	IN	PTR		tun.154.tun.1.ch1.edovo.com.		; 172.16.0.217
+221.0.16	IN	PTR		tun.155.tun.1.ch1.edovo.com.		; 172.16.0.221
+225.0.16	IN	PTR		tun.156.tun.1.ch1.edovo.com.		; 172.16.0.225
+229.0.16	IN	PTR		tun.157.tun.1.ch1.edovo.com.		; 172.16.0.229
+233.0.16	IN	PTR		tun.158.tun.1.ch1.edovo.com.		; 172.16.0.233
+237.0.16	IN	PTR		tun.159.tun.1.ch1.edovo.com.		; 172.16.0.237
+241.0.16	IN	PTR		tun.160.tun.1.ch1.edovo.com.		; 172.16.0.241
+245.0.16	IN	PTR		tun.161.tun.1.ch1.edovo.com.		; 172.16.0.245
+249.0.16	IN	PTR		tun.162.tun.1.ch1.edovo.com.		; 172.16.0.249
+253.0.16	IN	PTR		tun.163.tun.1.ch1.edovo.com.		; 172.16.0.253
+1.1.16		IN	PTR		tun.164.tun.1.ch1.edovo.com.		; 172.16.1.1
+5.1.16		IN	PTR		tun.165.tun.1.ch1.edovo.com.		; 172.16.1.5
+9.1.16		IN	PTR		tun.166.tun.1.ch1.edovo.com.		; 172.16.1.9
+13.1.16		IN	PTR		tun.167.tun.1.ch1.edovo.com.		; 172.16.1.13
+17.1.16		IN	PTR		tun.168.tun.1.ch1.edovo.com.		; 172.16.1.17
+21.1.16		IN	PTR		tun.169.tun.1.ch1.edovo.com.		; 172.16.1.21
+25.1.16		IN	PTR		tun.170.tun.1.ch1.edovo.com.		; 172.16.1.25
+29.1.16		IN	PTR		tun.171.tun.1.ch1.edovo.com.		; 172.16.1.29
+33.1.16		IN	PTR		tun.172.tun.1.ch1.edovo.com.		; 172.16.1.33
+37.1.16		IN	PTR		tun.173.tun.1.ch1.edovo.com.		; 172.16.1.37
+41.1.16		IN	PTR		tun.174.tun.1.ch1.edovo.com.		; 172.16.1.41
+45.1.16		IN	PTR		tun.175.tun.1.ch1.edovo.com.		; 172.16.1.45
+49.1.16		IN	PTR		tun.176.tun.1.ch1.edovo.com.		; 172.16.1.49
+53.1.16		IN	PTR		tun.177.tun.1.ch1.edovo.com.		; 172.16.1.53
+57.1.16		IN	PTR		tun.178.tun.1.ch1.edovo.com.		; 172.16.1.57
+61.1.16		IN	PTR		tun.179.tun.1.ch1.edovo.com.		; 172.16.1.61
+65.1.16		IN	PTR		tun.180.tun.1.ch1.edovo.com.		; 172.16.1.65
+69.1.16		IN	PTR		tun.181.tun.1.ch1.edovo.com.		; 172.16.1.69
+73.1.16		IN	PTR		tun.182.tun.1.ch1.edovo.com.		; 172.16.1.73
+77.1.16		IN	PTR		tun.183.tun.1.ch1.edovo.com.		; 172.16.1.77
+81.1.16		IN	PTR		tun.184.tun.1.ch1.edovo.com.		; 172.16.1.81
+85.1.16		IN	PTR		tun.185.tun.1.ch1.edovo.com.		; 172.16.1.85
+89.1.16		IN	PTR		tun.186.tun.1.ch1.edovo.com.		; 172.16.1.89
+93.1.16		IN	PTR		tun.187.tun.1.ch1.edovo.com.		; 172.16.1.93
+97.1.16		IN	PTR		tun.188.tun.1.ch1.edovo.com.		; 172.16.1.97
+101.1.16	IN	PTR		tun.189.tun.1.ch1.edovo.com.		; 172.16.1.101
+105.1.16	IN	PTR		tun.190.tun.1.ch1.edovo.com.		; 172.16.1.105
+109.1.16	IN	PTR		tun.191.tun.1.ch1.edovo.com.		; 172.16.1.109
+113.1.16	IN	PTR		tun.192.tun.1.ch1.edovo.com.		; 172.16.1.113
+117.1.16	IN	PTR		tun.193.tun.1.ch1.edovo.com.		; 172.16.1.117
+121.1.16	IN	PTR		tun.194.tun.1.ch1.edovo.com.		; 172.16.1.121
+125.1.16	IN	PTR		tun.195.tun.1.ch1.edovo.com.		; 172.16.1.125
+129.1.16	IN	PTR		tun.196.tun.1.ch1.edovo.com.		; 172.16.1.129
+133.1.16	IN	PTR		tun.197.tun.1.ch1.edovo.com.		; 172.16.1.133
+137.1.16	IN	PTR		tun.198.tun.1.ch1.edovo.com.		; 172.16.1.137
+141.1.16	IN	PTR		tun.199.tun.1.ch1.edovo.com.		; 172.16.1.141
+145.1.16	IN	PTR		tun.200.tun.1.ch1.edovo.com.		; 172.16.1.145
+149.1.16	IN	PTR		tun.201.tun.1.ch1.edovo.com.		; 172.16.1.149
+153.1.16	IN	PTR		tun.202.tun.1.ch1.edovo.com.		; 172.16.1.153
+157.1.16	IN	PTR		tun.203.tun.1.ch1.edovo.com.		; 172.16.1.157
+161.1.16	IN	PTR		tun.204.tun.1.ch1.edovo.com.		; 172.16.1.161
+165.1.16	IN	PTR		tun.205.tun.1.ch1.edovo.com.		; 172.16.1.165
+169.1.16	IN	PTR		tun.206.tun.1.ch1.edovo.com.		; 172.16.1.169
+173.1.16	IN	PTR		tun.207.tun.1.ch1.edovo.com.		; 172.16.1.173
+177.1.16	IN	PTR		tun.208.tun.1.ch1.edovo.com.		; 172.16.1.177
+181.1.16	IN	PTR		tun.209.tun.1.ch1.edovo.com.		; 172.16.1.181
+185.1.16	IN	PTR		tun.210.tun.1.ch1.edovo.com.		; 172.16.1.185
+189.1.16	IN	PTR		tun.211.tun.1.ch1.edovo.com.		; 172.16.1.189
+193.1.16	IN	PTR		tun.212.tun.1.ch1.edovo.com.		; 172.16.1.193
+197.1.16	IN	PTR		tun.213.tun.1.ch1.edovo.com.		; 172.16.1.197
+201.1.16	IN	PTR		tun.214.tun.1.ch1.edovo.com.		; 172.16.1.201
+205.1.16	IN	PTR		tun.215.tun.1.ch1.edovo.com.		; 172.16.1.205
+209.1.16	IN	PTR		tun.216.tun.1.ch1.edovo.com.		; 172.16.1.209
+213.1.16	IN	PTR		tun.217.tun.1.ch1.edovo.com.		; 172.16.1.213
+217.1.16	IN	PTR		tun.218.tun.1.ch1.edovo.com.		; 172.16.1.217
+221.1.16	IN	PTR		tun.219.tun.1.ch1.edovo.com.		; 172.16.1.221
+225.1.16	IN	PTR		tun.220.tun.1.ch1.edovo.com.		; 172.16.1.225
+229.1.16	IN	PTR		tun.221.tun.1.ch1.edovo.com.		; 172.16.1.229
+233.1.16	IN	PTR		tun.222.tun.1.ch1.edovo.com.		; 172.16.1.233
+237.1.16	IN	PTR		tun.223.tun.1.ch1.edovo.com.		; 172.16.1.237
+241.1.16	IN	PTR		tun.224.tun.1.ch1.edovo.com.		; 172.16.1.241
+245.1.16	IN	PTR		tun.225.tun.1.ch1.edovo.com.		; 172.16.1.245
+249.1.16	IN	PTR		tun.226.tun.1.ch1.edovo.com.		; 172.16.1.249
+253.1.16	IN	PTR		tun.227.tun.1.ch1.edovo.com.		; 172.16.1.253
+
+; Tunnel Router 2 - PTR Records
+1.8.16		IN	PTR		tun.100.tun.2.ch1.edovo.com.		; 172.16.8.1
+5.8.16		IN	PTR		tun.101.tun.2.ch1.edovo.com.		; 172.16.8.5
+9.8.16		IN	PTR		tun.102.tun.2.ch1.edovo.com.		; 172.16.8.9
+13.8.16		IN	PTR		tun.103.tun.2.ch1.edovo.com.		; 172.16.8.13
+17.8.16		IN	PTR		tun.104.tun.2.ch1.edovo.com.		; 172.16.8.17
+21.8.16		IN	PTR		tun.105.tun.2.ch1.edovo.com.		; 172.16.8.21
+25.8.16		IN	PTR		tun.106.tun.2.ch1.edovo.com.		; 172.16.8.25
+29.8.16		IN	PTR		tun.107.tun.2.ch1.edovo.com.		; 172.16.8.29
+33.8.16		IN	PTR		tun.108.tun.2.ch1.edovo.com.		; 172.16.8.33
+37.8.16		IN	PTR		tun.109.tun.2.ch1.edovo.com.		; 172.16.8.37
+41.8.16		IN	PTR		tun.110.tun.2.ch1.edovo.com.		; 172.16.8.41
+45.8.16		IN	PTR		tun.111.tun.2.ch1.edovo.com.		; 172.16.8.45
+49.8.16		IN	PTR		tun.112.tun.2.ch1.edovo.com.		; 172.16.8.49
+53.8.16		IN	PTR		tun.113.tun.2.ch1.edovo.com.		; 172.16.8.53
+57.8.16		IN	PTR		tun.114.tun.2.ch1.edovo.com.		; 172.16.8.57
+61.8.16		IN	PTR		tun.115.tun.2.ch1.edovo.com.		; 172.16.8.61
+65.8.16		IN	PTR		tun.116.tun.2.ch1.edovo.com.		; 172.16.8.65
+69.8.16		IN	PTR		tun.117.tun.2.ch1.edovo.com.		; 172.16.8.69
+73.8.16		IN	PTR		tun.118.tun.2.ch1.edovo.com.		; 172.16.8.73
+77.8.16		IN	PTR		tun.119.tun.2.ch1.edovo.com.		; 172.16.8.77
+81.8.16		IN	PTR		tun.120.tun.2.ch1.edovo.com.		; 172.16.8.81
+85.8.16		IN	PTR		tun.121.tun.2.ch1.edovo.com.		; 172.16.2.85
+89.8.16		IN	PTR		tun.122.tun.2.ch1.edovo.com.		; 172.16.8.89
+93.8.16		IN	PTR		tun.123.tun.2.ch1.edovo.com.		; 172.16.8.93
+97.8.16		IN	PTR		tun.124.tun.2.ch1.edovo.com.		; 172.16.8.97
+101.8.16	IN	PTR		tun.125.tun.2.ch1.edovo.com.		; 172.16.8.101
+105.8.16	IN	PTR		tun.126.tun.2.ch1.edovo.com.		; 172.16.8.105
+109.8.16	IN	PTR		tun.127.tun.2.ch1.edovo.com.		; 172.16.8.109
+113.8.16	IN	PTR		tun.128.tun.2.ch1.edovo.com.		; 172.16.8.113
+117.8.16	IN	PTR		tun.129.tun.2.ch1.edovo.com.		; 172.16.8.117
+121.8.16	IN	PTR		tun.130.tun.2.ch1.edovo.com.		; 172.16.8.121
+125.8.16	IN	PTR		tun.131.tun.2.ch1.edovo.com.		; 172.16.8.125
+129.8.16	IN	PTR		tun.132.tun.2.ch1.edovo.com.		; 172.16.8.129
+133.8.16	IN	PTR		tun.133.tun.2.ch1.edovo.com.		; 172.16.8.133
+137.8.16	IN	PTR		tun.134.tun.2.ch1.edovo.com.		; 172.16.8.137
+141.8.16	IN	PTR		tun.135.tun.2.ch1.edovo.com.		; 172.16.8.141
+145.8.16	IN	PTR		tun.136.tun.2.ch1.edovo.com.		; 172.16.8.145
+149.8.16	IN	PTR		tun.137.tun.2.ch1.edovo.com.		; 172.16.8.149
+153.8.16	IN	PTR		tun.138.tun.2.ch1.edovo.com.		; 172.16.8.153
+157.8.16	IN	PTR		tun.139.tun.2.ch1.edovo.com.		; 172.16.8.157
+161.8.16	IN	PTR		tun.140.tun.2.ch1.edovo.com.		; 172.16.8.161
+165.8.16	IN	PTR		tun.141.tun.2.ch1.edovo.com.		; 172.16.8.165
+169.8.16	IN	PTR		tun.142.tun.2.ch1.edovo.com.		; 172.16.8.169
+173.8.16	IN	PTR		tun.143.tun.2.ch1.edovo.com.		; 172.16.8.173
+177.8.16	IN	PTR		tun.144.tun.2.ch1.edovo.com.		; 172.16.8.177
+181.8.16	IN	PTR		tun.145.tun.2.ch1.edovo.com.		; 172.16.8.181
+185.8.16	IN	PTR		tun.146.tun.2.ch1.edovo.com.		; 172.16.8.185
+189.8.16	IN	PTR		tun.147.tun.2.ch1.edovo.com.		; 172.16.8.189
+193.8.16	IN	PTR		tun.148.tun.2.ch1.edovo.com.		; 172.16.8.193
+197.8.16	IN	PTR		tun.149.tun.2.ch1.edovo.com.		; 172.16.8.197
+201.8.16	IN	PTR		tun.150.tun.2.ch1.edovo.com.		; 172.16.8.201
+205.8.16	IN	PTR		tun.151.tun.2.ch1.edovo.com.		; 172.16.8.205
+209.8.16	IN	PTR		tun.152.tun.2.ch1.edovo.com.		; 172.16.8.209
+213.8.16	IN	PTR		tun.153.tun.2.ch1.edovo.com.		; 172.16.8.213
+217.8.16	IN	PTR		tun.154.tun.2.ch1.edovo.com.		; 172.16.8.217
+221.8.16	IN	PTR		tun.155.tun.2.ch1.edovo.com.		; 172.16.8.221
+225.8.16	IN	PTR		tun.156.tun.2.ch1.edovo.com.		; 172.16.8.225
+229.8.16	IN	PTR		tun.157.tun.2.ch1.edovo.com.		; 172.16.8.229
+233.8.16	IN	PTR		tun.158.tun.2.ch1.edovo.com.		; 172.16.8.233
+237.8.16	IN	PTR		tun.159.tun.2.ch1.edovo.com.		; 172.16.8.237
+241.8.16	IN	PTR		tun.160.tun.2.ch1.edovo.com.		; 172.16.8.241
+245.8.16	IN	PTR		tun.161.tun.2.ch1.edovo.com.		; 172.16.8.245
+249.8.16	IN	PTR		tun.162.tun.2.ch1.edovo.com.		; 172.16.8.249
+253.8.16	IN	PTR		tun.163.tun.2.ch1.edovo.com.		; 172.16.8.253
+
+; ############################################################
+; ############# EDOVO OFFICE DNS RECORDS #####################
+; ############################################################
+
+; Edovo Chicago Office Network - PTR Records
+2.32.16		IN	PTR		tun.1.office.il.edovo.com.		; 172.16.32.2
+6.32.16		IN	PTR		tun.2.office.il.edovo.com.		; 172.16.32.6
+10.32.16	IN	PTR		tun.3.office.il.edovo.com.		; 172.16.32.10
+14.32.16	IN	PTR		tun.4.office.il.edovo.com.		; 172.16.32.14
+
+; Edovo Cypress Office Network - PTR Records
+4.20.16		IN	PTR		wan.office.ca.edovo.com.		; 172.16.20.4
+6.1.31		IN	PTR		fw.office.ca.edovo.com.			; 172.31.60.6
+61.1.25		IN	PTR		accmgmt3.lld.edovo.com.			; 172.25.1.61
+60.1.25		IN	PTR		accounting01.lld.edovo.com.		; 172.25.1.60
+75.1.25		IN	PTR		accounting1-pc.lld.edovo.com.		; 172.25.1.75
+106.1.25	IN	PTR		acctmgmt4.lld.edovo.com.		; 172.25.1.106
+58.1.25		IN	PTR		acl-798174.lld.edovo.com.		; 172.25.1.58
+58.1.25		IN	PTR		acronisbackup.lld.edovo.com.		; 172.25.1.58
+38.1.25		IN	PTR		agarcia-hp.lld.edovo.com.		; 172.25.1.38
+43.1.25		IN	PTR		audiomining.lld.edovo.com.		; 172.25.1.43
+28.1.25		IN	PTR		audiomining-PC.lld.edovo.com.		; 172.25.1.28
+56.1.25		IN	PTR		brn30055cc78d96.lld.edovo.com.		; 172.25.1.56
+69.1.25		IN	PTR		ccannon-os05.lld.edovo.com.		; 172.25.1.69
+88.1.25		IN	PTR		clec03.lld.edovo.com.			; 172.25.1.88
+51.1.25		IN	PTR		corpprintserver.lld.edovo.com.		; 172.25.1.51
+51.1.25		IN	PTR		corpprintsrvrvm.lld.edovo.com.		; 172.25.1.51
+70.1.25		IN	PTR		custm01.lld.edovo.com.			; 172.25.1.70
+36.1.25		IN	PTR		custm02.lld.edovo.com.			; 172.25.1.36
+26.1.25		IN	PTR		custm03.lld.edovo.com.			; 172.25.1.26
+105.1.25	IN	PTR		custm04.lld.edovo.com.			; 172.25.1.105
+10.1.25		IN	PTR		custm05.lld.edovo.com.			; 172.25.1.10
+27.1.25		IN	PTR		custm09.lld.edovo.com.			; 172.25.1.27
+67.1.25		IN	PTR		custm10.lld.edovo.com.			; 172.25.1.67
+33.1.25		IN	PTR		custm5.lld.edovo.com.			; 172.25.1.33
+99.1.25		IN	PTR		custsrv01.lld.edovo.com.		; 172.25.1.99
+50.1.25		IN	PTR		enabavian-hp.lld.edovo.com.		; 172.25.1.50
+1.1.25		IN	PTR		hyperv-corp1.lld.edovo.com.		; 172.25.1.1
+22.1.25		IN	PTR		iconweb.lld.edovo.com.			; 172.25.1.22
+54.1.25		IN	PTR		lld-cbrown.lld.edovo.com.		; 172.25.1.54
+21.1.25		IN	PTR		lld-clec-01.lld.edovo.com.		; 172.25.1.21
+67.1.25		IN	PTR		lld-cled-02.lld.edovo.com.		; 172.25.1.67
+77.1.25		IN	PTR		lld-clec1221.lld.edovo.com.		; 172.25.1.77
+11.1.25		IN	PTR		lld-clec3.lld.edovo.com.		; 172.25.1.11
+10.0.25		IN	PTR		lld-corp-01.lld.edovo.com.		; 172.25.0.10
+30.0.25		IN	PTR		lld-corp-02.lld.edovo.com.		; 172.25.0.30
+65.1.25		IN	PTR		lld-cr.lld.edovo.com.			; 172.25.1.65
+85.1.25		IN	PTR		lld-ghansell.lld.edovo.com.		; 172.25.1.85
+85.1.25		IN	PTR		lld-ltran.lld.edovo.com.		; 172.25.1.85
+59.1.25		IN	PTR		lld-ptruong.lld.edovo.com.		; 172.25.1.59
+35.1.25		IN	PTR		lld-sguerra.lld.edovo.com.		; 172.25.1.35
+16.1.25		IN	PTR		lld-tisa.lld.edovo.com.			; 172.25.1.16
+47.1.25		IN	PTR		mgmt03.lld.edovo.com.			; 172.25.1.47
+55.1.25		IN	PTR		mgmt04.lld.edovo.com.			; 172.25.1.55
+50.1.25		IN	PTR		mgmt05.lld.edovo.com.			; 172.25.1.50
+27.1.25		IN	PTR		mgmt2.lld.edovo.com.			; 172.25.1.27
+13.1.25		IN	PTR		opcenter2.lld.edovo.com.		; 172.25.1.13
+27.1.25		IN	PTR		opssup.lld.edovo.com.			; 172.25.1.27
+27.1.25		IN	PTR		prowr1.lld.edovo.com.			; 172.25.1.27
+32.1.25		IN	PTR		prowr2.lld.edovo.com.			; 172.25.1.32
+73.1.25		IN	PTR		prowr3.lld.edovo.com.			; 172.25.1.73
+21.1.25		IN	PTR		prowr4.lld.edovo.com.			; 172.25.1.21
+52.1.25		IN	PTR		radiuscorp.lld.edovo.com.		; 172.25.1.52
+52.1.25		IN	PTR		radiussrvrcorp.lld.edovo.com.		; 172.25.1.52
+15.1.25		IN	PTR		rquinones-hp.lld.edovo.com.		; 172.25.1.15
+62.1.25		IN	PTR		rronces01.lld.edovo.com.		; 172.25.1.62
+26.1.25		IN	PTR		saleslp1.lld.edovo.com.			; 172.25.1.26
+75.1.25		IN	PTR		saleslp2.lld.edovo.com.			; 172.25.1.75
+33.1.25		IN	PTR		saleslp3.lld.edovo.com.			; 172.25.1.33
+125.0.25	IN	PTR		sftp.lld.edovo.com.			; 172.25.0.125
+63.1.25		IN	PTR		sftpagents.lld.edovo.com.		; 172.25.1.63
+126.0.25	IN	PTR		sqllegacy.lld.edovo.com.		; 172.25.0.126
+
+; ############################################################
+; ############# EDOVO VPN SITE DNS RECORDS ###################
+; ############################################################
+
+; Edovo Test Site - PTR Records
+2.0.16		IN	PTR		tun.1.groomlake.edovo.com.		; 172.16.0.2
+2.8.16		IN	PTR		tun.2.groomlake.edovo.com.		; 172.16.8.2
+
+; Napa County Jail, CA - PTR Records
+14.0.17		IN	PTR		fw.ncj.ca.edovo.com.			; 172.17.0.14
+13.0.17		IN	PTR		ge.ncj.ca.edovo.com.			; 172.17.0.13
+6.0.16		IN	PTR		tun.1.ncj.ca.edovo.com.			; 172.16.0.6
+6.8.16		IN	PTR		tun.2.ncj.ca.edovo.com.			; 172.16.8.6
+
+; Trinity County Jail, CA - PTR Records
+18.0.17		IN	PTR		fw.tcj.ca.edovo.com.			; 172.17.0.18
+17.0.17		IN	PTR		ge.tcj.ca.edovo.com.			; 172.17.0.17
+10.0.16		IN	PTR		tun.1.tcj.ca.edovo.com.			; 172.16.0.10
+10.8.16		IN	PTR		tun.2.tcj.ca.edovo.com.			; 172.16.8.10
+
+; IYC Chicago Juvenile, IL - PTR Record
+22.0.17		IN	PTR		fw.iycc.il.edovo.com.			; 172.17.0.22
+21.0.17		IN	PTR		ge.iycc.il.edovo.com.			; 172.17.0.21
+14.0.16		IN	PTR		tun.1.iycc.il.edovo.com.		; 172.16.0.14
+14.8.16		IN	PTR		tun.2.iycc.il.edovo.com.		; 172.16.8.14
+
+; Allegheny County Jail, PA - PTR Record
+26.0.17		IN	PTR		fw.acj.pa.edovo.com.			; 172.17.0.26
+25.0.17		IN	PTR		ge.acj.pa.edovo.com.			; 172.17.0.25
+18.0.16		IN	PTR		tun.1.acj.pa.edovo.com.			; 172.16.0.18
+18.8.16		IN	PTR		tun.2.acj.pa.edovo.com.			; 172.16.8.18
+
+; IYC Warrenville Juvenile, IL - PTR Record
+30.0.17		IN	PTR		fw.iycw.il.edovo.com.			; 172.17.0.30
+29.0.17		IN	PTR		ge.iycw.il.edovo.com.			; 172.17.0.29
+22.0.16		IN	PTR		tun.1.iycw.il.edovo.com.		; 172.16.0.22
+22.8.16		IN	PTR		tun.2.iycw.il.edovo.com.		; 172.16.8.22
+
+; Tutwiler Prison, AL - PTR Record
+34.0.17		IN	PTR		fw.tpw.al.edovo.com.			; 172.17.0.34
+33.0.17		IN	PTR		ge.tpw.al.edovo.com.			; 172.17.0.33
+26.0.16		IN	PTR		tun.1.tpw.al.edovo.com.			; 172.16.0.26
+26.8.16		IN	PTR		tun.2.tpw.al.edovo.com.			; 172.16.8.26
+
+; Madera County Jail, CA - PTR Record
+38.0.17		IN	PTR		fw.mcdc.ca.edovo.com.			; 172.17.0.38
+37.0.17		IN	PTR		ge.mcdc.ca.edovo.com.			; 172.17.0.37
+30.0.16		IN	PTR		tun.1.mcdc.ca.edovo.com.		; 172.16.0.30
+30.8.16		IN	PTR		tun.2.mcdc.ca.edovo.com.		; 172.16.8.30
+
+; High Point Detention, NC - PTR Record
+42.0.17		IN	PTR		fw.hpd.nc.edovo.com.			; 172.17.0.42
+41.0.17		IN	PTR		ge.hpd.nc.edovo.com.			; 172.17.0.41
+34.0.16		IN	PTR		tun.1.hpd.nc.edovo.com.			; 172.16.0.34
+34.8.16		IN	PTR		tun.2.hpd.nc.edovo.com.			; 172.16.8.34
+
+; Bartow County Jail, GA - PTR Record
+46.0.17		IN	PTR		fw.bcj.ga.edovo.com.			; 172.17.0.46
+45.0.17		IN	PTR		ge.bcj.ga.edovo.com.			; 172.17.0.45
+38.0.16		IN	PTR		tun.1.bcj.ga.edovo.com.			; 172.16.0.38
+38.8.16		IN	PTR		tun.2.bcj.ga.edovo.com.			; 172.16.8.38
+
+; Ozaukee County Jail, WI - PTR Record
+62.0.17		IN	PTR		fw.ocj.wi.edovo.com.			; 172.17.0.62
+61.0.17		IN	PTR		ge.ocj.wi.edovo.com.			; 172.17.0.61
+42.0.16		IN	PTR		tun.1.ocj.wi.edovo.com.			; 172.16.0.42
+42.8.16		IN	PTR		tun.2.ocj.wi.edovo.com.			; 172.16.8.42
+
+; Madera Juvenile, CA - PTR Record
+86.0.17		IN	PTR		fw.mcjd.ca.edovo.com.			; 172.17.0.86
+85.0.17		IN	PTR		ge.mcjd.ca.edovo.com.			; 172.17.0.85
+46.0.16		IN	PTR		tun.1.mcjd.ca.edovo.com.		; 172.16.0.46
+46.8.16		IN	PTR		tun.2.mcjd.ca.edovo.com.		; 172.16.8.46
+
+; Rockingham Jail, VA - PTR Record
+50.0.17		IN	PTR		fw.rhm.va.edovo.com.			; 172.17.0.50
+49.0.17		IN	PTR		ge.rhm.va.edovo.com.			; 172.17.0.49
+50.0.16		IN	PTR		tun.1.rhm.va.edovo.com.			; 172.16.0.50
+50.8.16		IN	PTR		tun.2.rhm.va.edovo.com.			; 172.16.8.50
+
+; Forsyth County Jail, NC - PTR Record
+10.0.17		IN	PTR		fw.fcj.nc.edovo.com.			; 172.17.0.10
+9.0.17		IN	PTR		ge.fcj.nc.edovo.com.			; 172.17.0.9
+54.0.16		IN	PTR		tun.1.fcj.nc.edovo.com.			; 172.16.0.54
+54.8.16		IN	PTR		tun.2.fcj.nc.edovo.com.			; 172.16.8.54
+
+; Kane County Jail, IL - PTR Record
+54.0.17		IN	PTR		fw.kcj.il.edovo.com.			; 172.17.0.54
+53.0.17		IN	PTR		ge.kcj.il.edovo.com.			; 172.17.0.53
+58.0.16		IN	PTR		tun.1.kcj.il.edovo.com.			; 172.16.0.58
+58.8.16		IN	PTR		tun.2.kcj.il.edovo.com.			; 172.16.8.58
+
+; Butts County Jail, GA - PTR Record
+66.0.17		IN	PTR		fw.bucj.ga.edovo.com.			; 172.17.0.66
+65.0.17		IN	PTR		ge.bucj.ga.edovo.com.			; 172.17.0.65
+62.0.16		IN	PTR		tun.1.bucj.ga.edovo.com.		; 172.16.0.62
+62.8.16		IN	PTR		tun.2.bucj.ga.edovo.com.		; 172.16.8.62
+
+; Rutherford County Jail, TN - PTR Record
+70.0.17		IN	PTR		fw.rcj.tn.edovo.com.			; 172.17.0.70
+69.0.17		IN	PTR		ge.rcj.tn.edovo.com.			; 172.17.0.69
+66.0.16		IN	PTR		tun.1.rcj.tn.edovo.com.			; 172.16.0.66
+66.8.16		IN	PTR		tun.2.rcj.tn.edovo.com.			; 172.16.8.66
+
+; Lassen County Jail, CA - PTR Record
+74.0.17		IN	PTR		fw.lcj.ca.edovo.com.			; 172.17.0.74
+73.0.17		IN	PTR		ge.lcj.ca.edovo.com.			; 172.17.0.73
+70.0.16		IN	PTR		tun.1.lcj.ca.edovo.com.			; 172.16.0.70
+70.8.16		IN	PTR		tun.2.lcj.ca.edovo.com.			; 172.16.8.70
+
+; Dorchester County Jail, SC - PTR Record
+130.0.17	IN	PTR		fw.dcj.sc.edovo.com.			; 172.17.0.130
+129.0.17	IN	PTR		ge.dcj.sc.edovo.com.			; 172.17.0.129
+74.0.16		IN	PTR		tun.1.dcj.sc.edovo.com.			; 172.16.0.74
+74.8.16		IN	PTR		tun.2.dcj.sc.edovo.com.			; 172.16.8.74
+
+; Granville County Jail, NC - PTR Record
+126.0.17	IN	PTR		fw.grcj.nc.edovo.com.			; 172.17.0.126
+125.0.17	IN	PTR		ge.grcj.nc.edovo.com.			; 172.17.0.125
+78.0.16		IN	PTR		tun.1.grcj.nc.edovo.com.		; 172.16.0.78
+78.8.16		IN	PTR		tun.2.grcj.nc.edovo.com.		; 172.16.8.78
+
+; Ulster County Jail, NY - PTR Record
+78.0.17		IN	PTR		fw.ucj.ny.edovo.com.			; 172.17.0.78
+77.0.17		IN	PTR		ge.ucj.ny.edovo.com.			; 172.17.0.77
+82.0.16		IN	PTR		tun.1.ucj.ny.edovo.com.			; 172.16.0.82
+82.8.16		IN	PTR		tun.2.ucj.ny.edovo.com.			; 172.16.8.82
+
+; San Luis Obisbo, CA - PTR Record
+82.0.17		IN	PTR		fw.slo.ca.edovo.com.			; 172.17.0.82
+81.0.17		IN	PTR		ge.slo.ca.edovo.com.			; 172.17.0.81
+86.0.16		IN	PTR		tun.1.slo.ca.edovo.com.			; 172.16.0.86
+86.8.16		IN	PTR		tun.2.slo.ca.edovo.com.			; 172.16.8.86
+
+; Davis County Jail, UT - PTR Record
+90.0.17		IN	PTR		fw.dcj.ut.edovo.com.			; 172.17.0.90
+89.0.17		IN	PTR		ge.dcj.ut.edovo.com.			; 172.17.0.89
+90.0.16		IN	PTR		tun.1.dcj.ut.edovo.com.			; 172.16.0.90
+90.8.16		IN	PTR		tun.2.dcj.ut.edovo.com.			; 172.16.8.90
+
+; Steuben County Jail, IN - PTR Record
+94.0.17		IN	PTR		fw.sbcj.in.edovo.com.			; 172.17.0.94
+93.0.17		IN	PTR		ge.sbcj.in.edovo.com.			; 172.17.0.93
+94.0.16		IN	PTR		tun.1.sbcj.in.edovo.com.		; 172.16.0.94
+94.8.16		IN	PTR		tun.2.sbcj.in.edovo.com.		; 172.16.8.94
+
+; Christian County Jail, MO - PTR Record
+98.0.17		IN	PTR		fw.ccj.mo.edovo.com.			; 172.17.0.98
+97.0.17		IN	PTR		ge.ccj.mo.edovo.com.			; 172.17.0.97
+98.0.16		IN	PTR		tun.1.ccj.mo.edovo.com.			; 172.16.0.98
+98.8.16		IN	PTR		tun.2.ccj.mo.edovo.com.			; 172.16.8.98
+
+; Sacamento County Main Jail, CA - PTR Record
+102.0.17	IN	PTR		fw.scmj.ca.edovo.com.			; 172.17.0.102
+101.0.17	IN	PTR		ge.scmj.ca.edovo.com.			; 172.17.0.101
+102.0.16	IN	PTR		tun.1.scmj.ca.edovo.com.		; 172.16.0.102
+102.8.16	IN	PTR		tun.2.scmj.ca.edovo.com.		; 172.16.8.102
+
+; Woodford County, IL - PTR Record
+106.0.16	IN	PTR		tun.1.wcj.il.edovo.com.			; 172.16.0.106
+106.8.16	IN	PTR		tun.2.wcj.il.edovo.com.			; 172.16.8.106
+
+; Middlesex County, MA - PTR Record
+110.0.17	IN	PTR		fw.mcj.ma.edovo.com.			; 172.17.0.110
+109.0.17	IN	PTR		ge.mcj.ma.edovo.com.			; 172.17.0.109
+110.0.16	IN	PTR		tun.1.mcj.ma.edovo.com.			; 172.16.0.110
+110.8.16	IN	PTR		tun.2.mcj.ma.edovo.com.			; 172.16.8.110
+
+; Hall County, GA - PTR Record
+114.0.17	IN	PTR		fw.hcj.ga.edovo.com.			; 172.17.0.114
+113.0.17	IN	PTR		ge.hcj.ga.edovo.com.			; 172.17.0.113
+114.0.16	IN	PTR		tun.1.hcj.ga.edovo.com.			; 172.16.0.114
+114.8.16	IN	PTR		tun.2.hcj.ga.edovo.com.			; 172.16.8.114
+
+; North Lawndale ATC, IL - PTR Record
+118.0.17	IN	PTR	  fw.nlc.il.edovo.com.				; 172.17.0.118
+117.0.17	IN	PTR	  ge.nlc.il.edovo.com.				; 172.17.0.117
+118.0.16	IN	PTR	  tun.1.nlc.il.edovo.com.			; 172.16.0.118
+118.8.16	IN	PTR	  tun.2.nlc.il.edovo.com.			; 172.16.8.118
+
+; Mono County Jail, CA - PTR Record
+122.0.17	IN	PTR	  fw.mcj.ca.edovo.com.				; 172.17.0.122
+121.0.17	IN	PTR	  ge.mcj.ca.edovo.com.				; 172.17.0.121
+122.0.16	IN	PTR	  tun.1.mcj.ca.edovo.com.			; 172.16.0.122
+122.8.16	IN	PTR	  tun.2.mcj.ca.edovo.com.			; 172.16.8.122
+
+; Mitchell County Jail, GA - PTR Record
+138.0.17	IN	PTR	  fw.mcj.ga.edovo.com.				; 172.17.0.138
+137.0.17	IN	PTR	  ge.mcj.ga.edovo.com.				; 172.17.0.137
+126.0.16	IN	PTR	  tun.1.mcj.ga.edovo.com.			; 172.16.0.126
+126.8.16	IN	PTR	  tun.2.mcj.ga.edovo.com.			; 172.16.8.126
+
+; Guilford County, NC - PTR Record
+134.0.17	IN	PTR	  fw.gcj.nc.edovo.com.				; 172.17.0.134
+133.0.17	IN	PTR	  ge.gcj.nc.edovo.com.				; 172.17.0.133
+130.0.16	IN	PTR	  tun.1.gcj.nc.edovo.com.			; 172.16.0.130
+130.8.16	IN	PTR	  tun.2.gcj.nc.edovo.com.			; 172.16.8.130
+
+; South Lake Tahoe Jail, CA - PTR Record
+146.0.17	IN	PTR	  fw.sltj.ca.edovo.com.				; 172.17.0.146
+145.0.17	IN	PTR	  ge.sltj.ca.edovo.com.				; 172.17.0.145
+134.0.16	IN	PTR	  tun.1.sltj.ca.edovo.com.			; 172.16.0.134
+134.8.16	IN	PTR	  tun.2.sltj.ca.edovo.com.			; 172.16.8.134
+
+; Ramsey County Jail, MN - PTR Record
+150.0.17	IN	PTR	  fw.rcj.mn.edovo.com.				; 172.17.0.150
+149.0.17	IN	PTR	  ge.rcj.mn.edovo.com.				; 172.17.0.149
+138.0.16	IN	PTR	  tun.1.rcj.mn.edovo.com.			; 172.16.0.138
+138.8.16	IN	PTR	  tun.2.rcj.mn.edovo.com.			; 172.16.8.138
+
+; Etowah County Jail, AL - PTR Record
+154.0.17	IN	PTR	  fw.ecj.al.edovo.com.				; 172.17.0.154
+153.0.17	IN	PTR	  ge.ecj.al.edovo.com.				; 172.17.0.153
+142.0.16	IN	PTR	  tun.1.ecj.al.edovo.com.			; 172.16.0.142
+142.8.16	IN	PTR	  tun.2.ecj.al.edovo.com.			; 172.16.8.142
+
+; Baraga Correctional Facility, MI - PTR Record
+158.0.17	IN	PTR	  fw.bcf.mi.edovo.com.				; 172.17.0.158
+157.0.17	IN	PTR	  ge.bcf.mi.edovo.com.				; 172.17.0.157
+146.0.16	IN	PTR	  tun.1.bcf.mi.edovo.com.			; 172.16.0.146
+146.8.16	IN	PTR	  tun.2.bcf.mi.edovo.com.			; 172.16.8.146
+
+; Wyandotte County Jail, KS - PTR Record
+162.0.17	IN	PTR	  fw.wcj.ks.edovo.com.				; 172.17.0.162
+161.0.17	IN	PTR	  ge.wcj.ks.edovo.com.				; 172.17.0.161
+150.0.16	IN	PTR	  tun.1.wcj.ks.edovo.com.			; 172.16.0.150
+150.8.16	IN	PTR	  tun.2.wcj.ks.edovo.com.			; 172.16.8.150
+
+; Paytel Test Lab, NC - PTR Record
+166.0.17	IN	PTR	  fw.paytel.nc.edovo.com.			; 172.17.0.166
+165.0.17	IN	PTR	  ge.paytel.nc.edovo.com.			; 172.17.0.165
+154.0.16	IN	PTR	  tun.1.paytel.nc.edovo.com.			; 172.16.0.154
+154.8.16	IN	PTR	  tun.2.paytel.nc.edovo.com.			; 172.16.8.154
+
+; Louisville Metro Department of Corrections, KY - PTR Record
+170.0.17	IN	PTR	  fw.lmdoc.ky.edovo.com.			; 172.17.0.170
+169.0.17	IN	PTR	  ge.lmdoc.ky.edovo.com.			; 172.17.0.169
+158.0.16	IN	PTR	  tun.1.lmdoc.ky.edovo.com.			; 172.16.0.158
+158.8.16	IN	PTR	  tun.2.lmdoc.ky.edovo.com.			; 172.16.8.158
+
+; Riverside Regional Network, VA - PTR Record
+174.0.17	IN	PTR	  fw.rrj.va.edovo.com.				; 172.17.0.174
+173.0.17	IN	PTR	  ge.rrj.va.edovo.com.				; 172.17.0.173
+162.0.16	IN	PTR	  tun.1.rrj.va.edovo.com.			; 172.16.0.162
+162.8.16	IN	PTR	  tun.2.rrj.va.edovo.com.			; 172.16.8.162
+
+; RSW Regional Jail, VA - PTR Record
+178.0.17	IN	PTR	  fw.rsw.va.edovo.com.				; 172.17.0.178
+177.0.17	IN	PTR	  ge.rsw.va.edovo.com.				; 172.17.0.177
+166.0.16	IN	PTR	  tun.1.rsw.va.edovo.com.			; 172.16.0.166
+166.8.16	IN	PTR	  tun.2.rsw.va.edovo.com.			; 172.16.8.166
+
+; Rockbridge Regional Jail, VA - PTR Record
+182.0.17	IN	PTR	  fw.rbj.va.edovo.com.				; 172.17.0.182
+181.0.17	IN	PTR	  ge.rbj.va.edovo.com.				; 172.17.0.181
+170.0.16	IN	PTR	  tun.1.rbj.va.edovo.com.			; 172.16.0.170
+170.8.16	IN	PTR	  tun.2.rbj.va.edovo.com.			; 172.16.8.170
+
+; El Dorado County, Placerville, CA - PTR Record
+141.0.17	IN	PTR	  ge.edp.ca.edovo.com.				; 172.17.0.141
+174.0.16	IN	PTR	  tun.1.edp.ca.edovo.com.			; 172.16.0.174
+174.8.16	IN	PTR	  tun.2.edp.ca.edovo.com.			; 172.16.8.174
+142.0.17	IN	PTR	  fw.edp.ca.edovo.com.				; 172.17.0.142
+
+; Warren County Jail, PA - PTR Record
+190.0.17	IN	PTR	  fw.wcj.pa.edovo.com.				; 172.17.0.190
+189.0.17	IN	PTR	  ge.wcj.pa.edovo.com.				; 172.17.0.189
+178.0.16	IN	PTR	  tun.1.wcj.pa.edovo.com.			; 172.16.0.178
+178.8.16	IN	PTR	  tun.2.wcj.pa.edovo.com.			; 172.16.8.178
+
+; Mendocino County Jail, CA - PTR Record
+194.0.17	IN	PTR	  fw.mdc.ca.edovo.com.				; 172.17.0.194
+193.0.17	IN	PTR	  ge.mdc.ca.edovo.com.				; 172.17.0.193
+182.0.16	IN	PTR	  tun.1.mdc.ca.edovo.com.			; 172.16.0.182
+182.8.16	IN	PTR	  tun.2.mdc.ca.edovo.com.			; 172.16.8.182
+
+; Sullivan County Jail, IN  - PTR Record
+198.0.17	IN	PTR	  fw.scj.in.edovo.com.				; 172.17.0.198
+197.0.17	IN	PTR	  ge.scj.in.edovo.com.				; 172.17.0.197
+186.0.16	IN	PTR	  tun.1.scj.in.edovo.com.			; 172.16.0.186
+186.8.16	IN	PTR	  tun.2.scj.in.edovo.com.			; 172.16.8.186
+
+; McCracken County Jail, KY - PTR Record
+202.0.17	IN	PTR	  fw.mcj.ky.edovo.com.				; 172.17.0.202
+201.0.17	IN	PTR	  ge.mcj.ky.edovo.com.				; 172.17.0.201
+190.0.16	IN	PTR	  tun.1.mcj.ky.edovo.com.			; 172.16.0.190
+190.8.16	IN	PTR	  tun.2.mcj.ky.edovo.com.			; 172.16.8.190
+
+; Mendocino Juvenile, CA - PTR Record
+206.0.17	IN	PTR	  fw.mdcj.ca.edovo.com.				; 172.17.0.206
+205.0.17	IN	PTR	  ge.mdcj.ca.edovo.com.				; 172.17.0.205
+194.0.16	IN	PTR	  tun.1.mdcj.ca.edovo.com.			; 172.16.0.194
+194.8.16	IN	PTR	  tun.2.mdcj.ca.edovo.com.			; 172.16.8.194
+
+; Vigo County Jail, IN - PTR Record
+210.0.17	IN	PTR	  fw.vcj.in.edovo.com.				; 172.17.0.210
+209.0.17	IN	PTR	  ge.vcj.in.edovo.com.				; 172.17.0.209
+198.0.16	IN	PTR	  tun.1.vcj.in.edovo.com.			; 172.16.0.198
+198.8.16	IN	PTR	  tun.2.vcj.in.edovo.com.			; 172.16.8.198
+
+; Humboldt County Jail, CA - PTR Record
+214.0.17	IN	PTR	  fw.hcj.ca.edovo.com.				; 172.17.0.214
+213.0.17	IN	PTR	  ge.hcj.ca.edovo.com.				; 172.17.0.213
+202.0.16	IN	PTR	  tun.1.hcj.ca.edovo.com.			; 172.16.0.202
+202.8.16	IN	PTR	  tun.2.mcj.ca.edovo.com.			; 172.16.8.202
+
+; McKinley County Jail, NM - PTR Record
+218.0.17	IN	PTR	  fw.mcj.nm.edovo.com.				; 172.17.0.218
+217.0.17	IN	PTR	  ge.mcj.nm.edovo.com.				; 172.17.0.217
+206.0.16	IN	PTR	  tun.1.mcj.nm.edovo.com.			; 172.16.0.206
+206.8.16	IN	PTR	  tun.2.mcj.nm.edovo.com.			; 172.16.8.206
+
+; Martinsville County Jail, VA - PTR Record
+222.0.17	IN	PTR	  fw.mcj.va.edovo.com.				; 172.17.0.222
+221.0.17	IN	PTR	  ge.mcj.va.edovo.com.				; 172.17.0.221
+210.0.16	IN	PTR	  tun.1.mcj.va.edovo.com.			; 172.16.0.210
+210.8.16	IN	PTR	  tun.2.mcj.va.edovo.com.			; 172.16.8.210
+
+; Montana State Prison, MT - PTR Record
+226.0.17	IN	PTR	  fw.msp.mt.edovo.com.				; 172.17.0.226
+225.0.17	IN	PTR	  ge.msp.mt.edovo.com.				; 172.17.0.225
+214.0.16	IN	PTR	  tun.1.msp.mt.edovo.com.			; 172.16.0.214
+214.8.16	IN	PTR	  tun.2.msp.mt.edovo.com.			; 172.16.8.214
+
+; Montana Womens Prison, MT - PTR Record
+230.0.17	IN	PTR	  fw.mwp.mt.edovo.com.				; 172.17.0.230
+229.0.17	IN	PTR	  ge.mwp.mt.edovo.com.				; 172.17.0.229
+218.0.16	IN	PTR	  tun.1.mwp.mt.edovo.com.			; 172.16.0.218
+218.8.16	IN	PTR	  tun.2.mwp.mt.edovo.com.			; 172.16.8.218
+
+; Montana Pine Hills Correctional Facility - PTR Record
+234.0.17	IN	PTR	  fw.phycf.mt.edovo.com.			; 172.17.0.234
+233.0.17	IN	PTR	  ge.phycf.mt.edovo.com.			; 172.17.0.233
+222.0.16	IN	PTR	  tun.1.phycf.mt.edovo.com.			; 172.16.0.222
+222.8.16	IN	PTR	  tun.2.phycf.mt.edovo.com.			; 172.16.8.222
+
+; Montana Riverside Corectional Facility - PTR Record
+238.0.17	IN	PTR	  fw.rcf.mt.edovo.com.				; 172.17.0.238
+237.0.17	IN	PTR	  ge.rcf.mt.edovo.com.				; 172.17.0.237
+226.0.16	IN	PTR	  tun.1.rcf.mt.edovo.com.			; 172.16.0.226
+226.8.16	IN	PTR	  tun.2.rcf.mt.edovo.com.			; 172.16.8.226
+
+; Montana Lewistown Infirmary - PTR Record
+242.0.17	IN	PTR	  fw.lti.mt.edovo.com.				; 172.17.0.242
+241.0.17	IN	PTR	  ge.lti.mt.edovo.com.				; 172.17.0.241
+230.0.16	IN	PTR	  tun.1.lti.mt.edovo.com.			; 172.16.0.230
+230.8.16	IN	PTR	  tun.2.lti.mt.edovo.com.			; 172.16.8.230
+
+; Randolph County, NC - PTR Record
+246.0.17	IN	PTR	  fw.rcj.nc.edovo.com.				; 172.17.0.246
+245.0.17	IN	PTR	  ge.rcj.nc.edovo.com.				; 172.17.0.245
+234.0.16	IN	PTR	  tun.1.rcj.nc.edovo.com.			; 172.16.0.234
+234.8.16	IN	PTR	  tun.2.rcj.nc.edovo.com.			; 172.16.8.234
+
+; St. Johns County, FL - PTR Record
+250.0.17	IN	PTR	  fw.sjc.fl.edovo.com.				; 172.17.0.250
+249.0.17	IN	PTR	  ge.sjc.fl.edovo.com.				; 172.17.0.249
+238.0.16	IN	PTR	  tun.1.sjc.fl.edovo.com.			; 172.16.0.238
+238.8.16	IN	PTR	  tun.2.sjc.fl.edovo.com.			; 172.16.8.238
+
+; Santa Barbara County, CA - PTR Record
+254.0.17	IN	PTR	  fw.sbc.ca.edovo.com.				; 172.17.0.254
+253.0.17	IN	PTR	  ge.sbc.ca.edovo.com.				; 172.17.0.253
+242.0.16	IN	PTR	  tun.1.sbc.ca.edovo.com.			; 172.16.0.242
+242.8.16	IN	PTR	  tun.2.sbc.ca.edovo.com.			; 172.16.8.242
+
+; Burke County, GA - PTR Record
+106.0.17	IN	PTR	  fw.bk.ga.edovo.com.				; 172.17.0.106
+105.0.17	IN	PTR	  ge.bk.ga.edovo.com.				; 172.17.0.105
+246.0.16	IN	PTR	  tun.1.bk.ga.edovo.com.			; 172.16.0.246
+246.8.16	IN	PTR	  tun.2.bk.ga.edovo.com.			; 172.16.8.246
+
+; Turnkey Office
+250.0.16	IN	PTR	  tun.1.trnkey.1.edovo.com.			; 172.16.0.250
+250.8.16	IN	PTR	  tun.2.trnkey.1.edovo.com.			; 172.16.8.250
+
+; Turnkey Site
+254.0.16	IN	PTR	  tun.1.trnkey.2.edovo.com.			; 172.16.0.254
+254.8.16	IN	PTR	  tun.2.trnkey.2.edovo.com.			; 172.16.8.254
+
+;Dawson County, MT - PTR Record
+
+
+; ############################################################
+; ############# EDOVO WAN SITE DNS RECORDS ###################
+; ############################################################
+
+; ############# ATT WAN SITE DNS RECORDS #####################
+
+; Yolo County Jail, CA - PTR Record
+2.8.24		IN	PTR	 fw.ycj.ca.edovo.com.				; 172.24.8.2
+1.8.24		IN	PTR	 ge.ycj.ca.edovo.com.				; 172.24.8.1
+11.20.16	IN	PTR	 wan.ycj.ca.edovo.com.				; 172.16.20.11
+
+; William Donaldson Correctional Facility, AL - PTR Record
+6.8.24		IN	PTR	 fw.wdcf.al.edovo.com.				; 172.24.8.6
+5.8.24		IN	PTR	 ge.wdcf.al.edovo.com.				; 172.24.8.5
+12.20.16	IN	PTR	 wan.wdcf.al.edovo.com.				; 172.16.20.12
+
+; Sonoma County Jail, CA - PTR Record
+10.8.24		IN	PTR	 fw.scj.ca.edovo.com.				; 172.24.8.10
+9.8.24		IN	PTR	 ge.scj.ca.edovo.com.				; 172.24.8.9
+13.20.16	IN	PTR	 wan.scj.ca.edovo.com.				; 172.16.20.13
+
+; Thumb Correctional Facility Network, MI - PTR Record
+14.8.24		IN	PTR	 fw.tcf.mi.edovo.com.				; 172.24.8.14
+13.8.24		IN	PTR	 ge.tcf.mi.edovo.com.				; 172.24.8.13
+14.20.16	IN	PTR	 wan.tcf.mi.edovo.com.				; 172.16.20.14
+
+; Women's Huron Valley Correctional Network, MI - PTR Record
+18.8.24		IN	PTR	 fw.whvc.mi.edovo.com.				; 172.24.8.18
+17.8.24		IN	PTR	 ge.whvc.mi.edovo.com.				; 172.24.8.17
+15.20.16	IN	PTR	 wan.whvc.mi.edovo.com.				; 172.16.20.15
+
+; Bellamy Creek Correctional Network, MI - PTR Record
+22.8.24		IN	PTR	 fw.bcc.mi.edovo.com.				; 172.24.8.22
+21.8.24		IN	PTR	 ge.bcc.mi.edovo.com.				; 172.24.8.21
+16.20.16	IN	PTR	 wan.bcc.mi.edovo.com.				; 172.16.20.16
+
+; ##################################################
+; ############# END DNS CONFIGURATION ##############
+; ##################################################
+
+; END

@@ -1,0 +1,23 @@
+# Role to install bird to staging servers
+---
+# Install BGP Internet Routing Daemon
+   - name: Install BIRD
+     apt:
+       name: bird
+       state: installed
+       update_cache: true
+
+# Copy bird.conf
+   - name: Copy bird.conf
+     template:
+       src: bird.conf
+       dest: /etc/bird/bird.conf
+       owner: root
+       group: root
+       mode: 0644
+
+# Restart  BIRD
+   - name: Restart BIRD
+     service:
+       name: bird
+       state: restarted
